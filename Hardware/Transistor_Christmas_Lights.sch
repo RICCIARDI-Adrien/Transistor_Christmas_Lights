@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Main page"
 Date "2021-12-29"
 Rev ""
@@ -172,4 +172,24 @@ Wire Wire Line
 	3650 2450 3650 2550
 Wire Wire Line
 	2200 2750 2900 2750
+$Sheet
+S 1500 5500 1000 1000
+U 61CE6682
+F0 "Led_Control" 50
+F1 "Led_Control.sch" 50
+$EndSheet
+Wire Wire Line
+	2200 2600 2200 2750
+Connection ~ 2200 2750
+$Comp
+L power:VS #PWR06
+U 1 1 61CE7722
+P 2200 2600
+F 0 "#PWR06" H 2000 2450 50  0001 C CNN
+F 1 "VS" H 2215 2773 50  0000 C CNN
+F 2 "" H 2200 2600 50  0001 C CNN
+F 3 "" H 2200 2600 50  0001 C CNN
+	1    2200 2600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
