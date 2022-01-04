@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title "Leds control logic and power"
-Date ""
+Date "2022-01-01"
 Rev ""
 Comp "(C) Adrien RICCIARDI"
 Comment1 ""
@@ -366,7 +366,7 @@ L Transistor_BJT:BCX51 Q9
 U 1 1 61D053A5
 P 7550 2250
 F 0 "Q9" H 7740 2204 50  0000 L CNN
-F 1 "BCX51,115" H 7740 2295 50  0000 L CNN
+F 1 "BCX51" H 7740 2295 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-89-3" H 7750 2175 50  0001 L CIN
 F 3 "http://www.infineon.com/dgdl/bcx51_bcx52_bcx53.pdf" H 7550 2250 50  0001 L CNN
 F 4 "Q" H 7550 2250 50  0001 C CNN "Spice_Primitive"
@@ -374,6 +374,7 @@ F 5 "BCX51" H 7550 2250 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 7550 2250 50  0001 C CNN "Spice_Netlist_Enabled"
 F 7 "Spice_Simulation/BCX51.lib" H 7550 2250 50  0001 C CNN "Spice_Lib_File"
 F 8 "3 1 2" H 7550 2250 50  0001 C CNN "Spice_Node_Sequence"
+F 9 "BCX51,115" H 7550 2250 50  0001 C CNN "ManufacturerPartNumber"
 	1    7550 2250
 	1    0    0    1   
 $EndComp
@@ -634,8 +635,8 @@ L power:GND #PWR?
 U 1 1 61D82050
 P 2100 5000
 AR Path="/61D82050" Ref="#PWR?"  Part="1" 
-AR Path="/61CE6682/61D82050" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2100 4750 50  0001 C CNN
+AR Path="/61CE6682/61D82050" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 2100 4750 50  0001 C CNN
 F 1 "GND" H 2105 4827 50  0000 C CNN
 F 2 "" H 2100 5000 50  0001 C CNN
 F 3 "" H 2100 5000 50  0001 C CNN
@@ -643,16 +644,19 @@ F 3 "" H 2100 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 61D82878
+L power:+5V #PWR?
+U 1 1 61FED532
 P 2100 3350
-AR Path="/61D82878" Ref="#PWR?"  Part="1" 
-AR Path="/61CE6682/61D82878" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2100 3100 50  0001 C CNN
-F 1 "GND" H 2105 3177 50  0000 C CNN
+AR Path="/61FED532" Ref="#PWR?"  Part="1" 
+AR Path="/61CE6682/61FED532" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2100 3200 50  0001 C CNN
+F 1 "+5V" H 2115 3523 50  0000 C CNN
 F 2 "" H 2100 3350 50  0001 C CNN
 F 3 "" H 2100 3350 50  0001 C CNN
+F 4 "V" H 2100 3350 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 2100 3350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2100 3350 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    2100 3350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

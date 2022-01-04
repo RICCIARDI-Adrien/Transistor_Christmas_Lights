@@ -1,0 +1,2624 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 3 3
+Title "A ring counter made of RS latches."
+Date "2022-01-01"
+Rev ""
+Comp "(C) Adrien RICCIARDI"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 4000 4500 2    50   ~ 0
+CLK
+Wire Wire Line
+	2850 2100 2650 2100
+Wire Wire Line
+	3150 2100 3200 2100
+$Comp
+L Device:R R?
+U 1 1 61D815A8
+P 3000 2100
+AR Path="/61D815A8" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61D815A8" Ref="R21"  Part="1" 
+F 0 "R21" V 2703 2100 50  0000 C CNN
+F 1 "1K" V 2794 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2930 2100 50  0001 C CNN
+F 3 "~" H 3000 2100 50  0001 C CNN
+F 4 "5%" V 2885 2100 50  0000 C CNN "Value2"
+F 5 "R" H 3000 2100 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 3000 2100 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 3000 2100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3000 2100
+	0    1    1    0   
+$EndComp
+Text Label 13300 8500 2    50   ~ 0
+CLK
+Text HLabel 13100 8500 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	3500 1400 3500 1450
+$Comp
+L power:+5V #PWR?
+U 1 1 61D776A5
+P 3500 1400
+AR Path="/61D776A5" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/61D776A5" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 3500 1250 50  0001 C CNN
+F 1 "+5V" H 3515 1573 50  0000 C CNN
+F 2 "" H 3500 1400 50  0001 C CNN
+F 3 "" H 3500 1400 50  0001 C CNN
+F 4 "V" H 3500 1400 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 3500 1400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3500 1400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3500 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2350 3500 2300
+$Comp
+L power:GND #PWR028
+U 1 1 61D765C5
+P 3500 2350
+F 0 "#PWR028" H 3500 2100 50  0001 C CNN
+F 1 "GND" H 3505 2177 50  0000 C CNN
+F 2 "" H 3500 2350 50  0001 C CNN
+F 3 "" H 3500 2350 50  0001 C CNN
+	1    3500 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1850 3500 1900
+Connection ~ 3500 1850
+Wire Wire Line
+	3950 2900 4050 2900
+Wire Wire Line
+	3950 1850 3950 2900
+Wire Wire Line
+	3500 1850 3950 1850
+Wire Wire Line
+	3500 1750 3500 1850
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61D74558
+P 3400 2100
+AR Path="/61D74558" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61D74558" Ref="Q17"  Part="1" 
+F 0 "Q17" H 3591 2146 50  0000 L CNN
+F 1 "BC848" H 3591 2055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3600 2025 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3400 2100 50  0001 L CNN
+F 4 "Q" H 3400 2100 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 3400 2100 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3400 2100 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 3400 2100 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 3400 2100 50  0001 C CNN "Spice_Node_Sequence"
+	1    3400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61D73DBC
+P 3500 1600
+AR Path="/61D73DBC" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61D73DBC" Ref="R23"  Part="1" 
+F 0 "R23" H 3570 1691 50  0000 L CNN
+F 1 "1K" H 3570 1600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3430 1600 50  0001 C CNN
+F 3 "~" H 3500 1600 50  0001 C CNN
+F 4 "5%" H 3570 1509 50  0000 L CNN "Value2"
+F 5 "R" H 3500 1600 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 3500 1600 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 3500 1600 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3500 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2300 4850 2350
+Connection ~ 4600 1950
+Wire Wire Line
+	4350 1950 4600 1950
+Wire Wire Line
+	4350 2000 4350 1950
+Wire Wire Line
+	4600 1950 4600 1900
+Wire Wire Line
+	4850 1950 4600 1950
+Wire Wire Line
+	4850 2000 4850 1950
+$Comp
+L Device:R R?
+U 1 1 61D65248
+P 4850 2150
+AR Path="/61D65248" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61D65248" Ref="R29"  Part="1" 
+F 0 "R29" H 4920 2241 50  0000 L CNN
+F 1 "1K" H 4920 2150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4780 2150 50  0001 C CNN
+F 3 "~" H 4850 2150 50  0001 C CNN
+F 4 "5%" H 4920 2059 50  0000 L CNN "Value2"
+F 5 "R" H 4850 2150 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 4850 2150 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 4850 2150 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4850 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3700 4600 3650
+Wire Wire Line
+	4850 2850 4850 3650
+Wire Wire Line
+	4600 3650 4350 3650
+Connection ~ 4600 3650
+Wire Wire Line
+	4350 3650 4350 3600
+Wire Wire Line
+	4850 3650 4600 3650
+Wire Wire Line
+	4350 2650 4350 2700
+Connection ~ 4350 2650
+Wire Wire Line
+	4350 2650 4550 2650
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61D5F1AE
+P 4750 2650
+AR Path="/61D5F1AE" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61D5F1AE" Ref="Q23"  Part="1" 
+F 0 "Q23" H 4941 2696 50  0000 L CNN
+F 1 "BC848" H 4941 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4950 2575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 4750 2650 50  0001 L CNN
+F 4 "Q" H 4750 2650 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 4750 2650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4750 2650 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 4750 2650 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 4750 2650 50  0001 C CNN "Spice_Node_Sequence"
+	1    4750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2300 4350 2650
+$Comp
+L power:+5V #PWR?
+U 1 1 61D5D6DB
+P 4600 1900
+AR Path="/61D5D6DB" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/61D5D6DB" Ref="#PWR030"  Part="1" 
+F 0 "#PWR030" H 4600 1750 50  0001 C CNN
+F 1 "+5V" H 4615 2073 50  0000 C CNN
+F 2 "" H 4600 1900 50  0001 C CNN
+F 3 "" H 4600 1900 50  0001 C CNN
+F 4 "V" H 4600 1900 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 4600 1900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4600 1900 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61D5CEF6
+P 4350 2150
+AR Path="/61D5CEF6" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61D5CEF6" Ref="R27"  Part="1" 
+F 0 "R27" H 4420 2241 50  0000 L CNN
+F 1 "1K" H 4420 2150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4280 2150 50  0001 C CNN
+F 3 "~" H 4350 2150 50  0001 C CNN
+F 4 "5%" H 4420 2059 50  0000 L CNN "Value2"
+F 5 "R" H 4350 2150 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 4350 2150 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 4350 2150 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4350 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3100 4350 3200
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61D5BDF5
+P 4250 2900
+AR Path="/61D5BDF5" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61D5BDF5" Ref="Q19"  Part="1" 
+F 0 "Q19" H 4441 2946 50  0000 L CNN
+F 1 "BC848" H 4441 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4450 2825 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 4250 2900 50  0001 L CNN
+F 4 "Q" H 4250 2900 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 4250 2900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4250 2900 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 4250 2900 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 4250 2900 50  0001 C CNN "Spice_Node_Sequence"
+	1    4250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 61D5B2C2
+P 4600 3700
+F 0 "#PWR031" H 4600 3450 50  0001 C CNN
+F 1 "GND" H 4605 3527 50  0000 C CNN
+F 2 "" H 4600 3700 50  0001 C CNN
+F 3 "" H 4600 3700 50  0001 C CNN
+	1    4600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3400 4050 3400
+Text Notes 1900 4450 0    50   ~ 0
+RESET
+Text Notes 3350 4450 0    50   ~ 0
+SET
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61D57C32
+P 4250 3400
+AR Path="/61D57C32" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61D57C32" Ref="Q20"  Part="1" 
+F 0 "Q20" H 4441 3446 50  0000 L CNN
+F 1 "BC848" H 4441 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4450 3325 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 4250 3400 50  0001 L CNN
+F 4 "Q" H 4250 3400 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 4250 3400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4250 3400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 4250 3400 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 4250 3400 50  0001 C CNN "Spice_Node_Sequence"
+	1    4250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4700 3150 4750
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61D1AF3A
+P 3250 4500
+AR Path="/61D1AF3A" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61D1AF3A" Ref="Q12"  Part="1" 
+F 0 "Q12" H 3441 4546 50  0000 L CNN
+F 1 "BC848" H 3441 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3450 4425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3250 4500 50  0001 L CNN
+F 4 "Q" H 3250 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 3250 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3250 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 3250 4500 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 3250 4500 50  0001 C CNN "Spice_Node_Sequence"
+	1    3250 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61D5912A
+P 3650 4500
+AR Path="/61D5912A" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61D5912A" Ref="R17"  Part="1" 
+F 0 "R17" V 3765 4500 50  0000 C CNN
+F 1 "10K" V 3856 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3580 4500 50  0001 C CNN
+F 3 "~" H 3650 4500 50  0001 C CNN
+F 4 "5%" V 3947 4500 50  0000 C CNN "Value2"
+F 5 "R" H 3650 4500 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 3650 4500 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 3650 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3650 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 4500 3450 4500
+Wire Wire Line
+	4000 4500 3800 4500
+Wire Wire Line
+	3150 3800 3150 4300
+Wire Wire Line
+	2000 4500 2050 4500
+$Comp
+L Device:R R?
+U 1 1 61D5A73E
+P 1850 4500
+AR Path="/61D5A73E" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61D5A73E" Ref="R16"  Part="1" 
+F 0 "R16" V 1965 4500 50  0000 C CNN
+F 1 "10K" V 2056 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1780 4500 50  0001 C CNN
+F 3 "~" H 1850 4500 50  0001 C CNN
+F 4 "5%" V 2147 4500 50  0000 C CNN "Value2"
+F 5 "R" H 1850 4500 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 1850 4500 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 1850 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1850 4500
+	0    1    1    0   
+$EndComp
+Connection ~ 2750 4750
+Wire Wire Line
+	2350 4700 2350 4750
+Wire Wire Line
+	2750 4750 2350 4750
+Wire Wire Line
+	2750 4750 2750 4800
+Wire Wire Line
+	3150 4750 2750 4750
+$Comp
+L power:GND #PWR022
+U 1 1 61D52970
+P 2750 4800
+F 0 "#PWR022" H 2750 4550 50  0001 C CNN
+F 1 "GND" H 2755 4627 50  0000 C CNN
+F 2 "" H 2750 4800 50  0001 C CNN
+F 3 "" H 2750 4800 50  0001 C CNN
+	1    2750 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3800 2600 3800
+Connection ~ 2350 3800
+Wire Wire Line
+	2350 3800 2350 4300
+Wire Wire Line
+	3150 3800 3200 3800
+Connection ~ 3150 3800
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61D4E2E4
+P 2250 4500
+AR Path="/61D4E2E4" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61D4E2E4" Ref="Q13"  Part="1" 
+F 0 "Q13" H 2441 4546 50  0000 L CNN
+F 1 "BC848" H 2441 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 4425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 2250 4500 50  0001 L CNN
+F 4 "Q" H 2250 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 2250 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2250 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 2250 4500 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 2250 4500 50  0001 C CNN "Spice_Node_Sequence"
+	1    2250 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3800 2350 3800
+Wire Wire Line
+	2900 3800 3150 3800
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61D95C9D
+P 2100 3800
+AR Path="/61D95C9D" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61D95C9D" Ref="Q10"  Part="1" 
+F 0 "Q10" H 2291 3846 50  0000 L CNN
+F 1 "BC848" H 2291 3755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 3725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 2100 3800 50  0001 L CNN
+F 4 "Q" H 2100 3800 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 2100 3800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2100 3800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 2100 3800 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 2100 3800 50  0001 C CNN "Spice_Node_Sequence"
+	1    2100 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4050 2000 4000
+$Comp
+L power:GND #PWR020
+U 1 1 61D0DDA3
+P 2000 4050
+F 0 "#PWR020" H 2000 3800 50  0001 C CNN
+F 1 "GND" H 2005 3877 50  0000 C CNN
+F 2 "" H 2000 4050 50  0001 C CNN
+F 3 "" H 2000 4050 50  0001 C CNN
+	1    2000 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2850 3500 2850
+Connection ~ 2750 2850
+Wire Wire Line
+	2750 2800 2750 2850
+Wire Wire Line
+	2000 2850 2750 2850
+Wire Wire Line
+	2900 3400 3050 3400
+Wire Wire Line
+	2900 3400 2600 3800
+Wire Wire Line
+	2450 3400 2600 3400
+Wire Wire Line
+	2900 3800 2600 3400
+Wire Wire Line
+	3500 2850 3500 2950
+Wire Wire Line
+	2000 2950 2000 2850
+Wire Wire Line
+	3500 3400 3500 3600
+Connection ~ 3500 3400
+Wire Wire Line
+	3350 3400 3500 3400
+Wire Wire Line
+	2000 3400 2000 3600
+Connection ~ 2000 3400
+Wire Wire Line
+	2000 3400 2150 3400
+Wire Wire Line
+	2000 3250 2000 3400
+$Comp
+L Device:R R?
+U 1 1 61D972C2
+P 2000 3100
+AR Path="/61D972C2" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61D972C2" Ref="R12"  Part="1" 
+F 0 "R12" H 1931 3191 50  0000 R CNN
+F 1 "1K" H 1931 3100 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1930 3100 50  0001 C CNN
+F 3 "~" H 2000 3100 50  0001 C CNN
+F 4 "5%" H 1931 3009 50  0000 R CNN "Value2"
+F 5 "R" H 2000 3100 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 2000 3100 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 2000 3100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61D96A4E
+P 2300 3400
+AR Path="/61D96A4E" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61D96A4E" Ref="R13"  Part="1" 
+F 0 "R13" V 2003 3400 50  0000 C CNN
+F 1 "10K" V 2094 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2230 3400 50  0001 C CNN
+F 3 "~" H 2300 3400 50  0001 C CNN
+F 4 "5%" V 2185 3400 50  0000 C CNN "Value2"
+F 5 "R" H 2300 3400 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 2300 3400 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 2300 3400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2300 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61D94265
+P 3200 3400
+AR Path="/61D94265" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61D94265" Ref="R14"  Part="1" 
+F 0 "R14" V 2903 3400 50  0000 C CNN
+F 1 "10K" V 2994 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3130 3400 50  0001 C CNN
+F 3 "~" H 3200 3400 50  0001 C CNN
+F 4 "5%" V 3085 3400 50  0000 C CNN "Value2"
+F 5 "R" H 3200 3400 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 3200 3400 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 3200 3400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3200 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 3250 3500 3400
+Wire Wire Line
+	3500 4000 3500 4050
+$Comp
+L power:GND #PWR023
+U 1 1 61D92D49
+P 3500 4050
+F 0 "#PWR023" H 3500 3800 50  0001 C CNN
+F 1 "GND" H 3505 3877 50  0000 C CNN
+F 2 "" H 3500 4050 50  0001 C CNN
+F 3 "" H 3500 4050 50  0001 C CNN
+	1    3500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61D92D43
+P 2750 2800
+AR Path="/61D92D43" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/61D92D43" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 2750 2650 50  0001 C CNN
+F 1 "+5V" H 2765 2973 50  0000 C CNN
+F 2 "" H 2750 2800 50  0001 C CNN
+F 3 "" H 2750 2800 50  0001 C CNN
+F 4 "V" H 2750 2800 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 2750 2800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2750 2800 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61D92D3A
+P 3500 3100
+AR Path="/61D92D3A" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61D92D3A" Ref="R15"  Part="1" 
+F 0 "R15" H 3570 3191 50  0000 L CNN
+F 1 "1K" H 3570 3100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3430 3100 50  0001 C CNN
+F 3 "~" H 3500 3100 50  0001 C CNN
+F 4 "5%" H 3570 3009 50  0000 L CNN "Value2"
+F 5 "R" H 3500 3100 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 3500 3100 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 3500 3100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61D92D30
+P 3400 3800
+AR Path="/61D92D30" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61D92D30" Ref="Q11"  Part="1" 
+F 0 "Q11" H 3591 3846 50  0000 L CNN
+F 1 "BC848" H 3591 3755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3600 3725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3400 3800 50  0001 L CNN
+F 4 "Q" H 3400 3800 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 3400 3800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3400 3800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 3400 3800 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 3400 3800 50  0001 C CNN "Spice_Node_Sequence"
+	1    3400 3800
+	1    0    0    -1  
+$EndComp
+Text Label 2650 2100 0    50   ~ 0
+CLK
+Connection ~ 4850 2350
+Wire Wire Line
+	4850 2350 4850 2450
+Text Label 5400 2350 2    50   ~ 0
+LATCH_1_OUT
+Wire Wire Line
+	4850 2350 5400 2350
+Wire Wire Line
+	8950 2900 9150 2900
+Wire Wire Line
+	8950 2650 8950 2900
+$Comp
+L Device:R R?
+U 1 1 61DD7B87
+P 8950 2500
+AR Path="/61DD7B87" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61DD7B87" Ref="R37"  Part="1" 
+F 0 "R37" H 9020 2591 50  0000 L CNN
+F 1 "1K" H 9020 2500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8880 2500 50  0001 C CNN
+F 3 "~" H 8950 2500 50  0001 C CNN
+F 4 "5%" H 9020 2409 50  0000 L CNN "Value2"
+F 5 "R" H 8950 2500 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 8950 2500 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 8950 2500 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61DA7B7A
+P 8050 3800
+AR Path="/61DA7B7A" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61DA7B7A" Ref="Q28"  Part="1" 
+F 0 "Q28" H 8241 3846 50  0000 L CNN
+F 1 "BC848" H 8241 3755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8250 3725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 8050 3800 50  0001 L CNN
+F 4 "Q" H 8050 3800 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 8050 3800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8050 3800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 8050 3800 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 8050 3800 50  0001 C CNN "Spice_Node_Sequence"
+	1    8050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DA7B6F
+P 8150 3100
+AR Path="/61DA7B6F" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61DA7B6F" Ref="R35"  Part="1" 
+F 0 "R35" H 8220 3191 50  0000 L CNN
+F 1 "1K" H 8220 3100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8080 3100 50  0001 C CNN
+F 3 "~" H 8150 3100 50  0001 C CNN
+F 4 "5%" H 8220 3009 50  0000 L CNN "Value2"
+F 5 "R" H 8150 3100 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 8150 3100 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 8150 3100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61DA7B65
+P 7400 2800
+AR Path="/61DA7B65" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/61DA7B65" Ref="#PWR035"  Part="1" 
+F 0 "#PWR035" H 7400 2650 50  0001 C CNN
+F 1 "+5V" H 7415 2973 50  0000 C CNN
+F 2 "" H 7400 2800 50  0001 C CNN
+F 3 "" H 7400 2800 50  0001 C CNN
+F 4 "V" H 7400 2800 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 7400 2800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7400 2800 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    7400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 61DA7B5C
+P 8150 4050
+F 0 "#PWR037" H 8150 3800 50  0001 C CNN
+F 1 "GND" H 8155 3877 50  0000 C CNN
+F 2 "" H 8150 4050 50  0001 C CNN
+F 3 "" H 8150 4050 50  0001 C CNN
+	1    8150 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 4000 8150 4050
+Wire Wire Line
+	8150 3250 8150 3400
+$Comp
+L Device:R R?
+U 1 1 61DA7B54
+P 7850 3400
+AR Path="/61DA7B54" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61DA7B54" Ref="R34"  Part="1" 
+F 0 "R34" V 7553 3400 50  0000 C CNN
+F 1 "10K" V 7644 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7780 3400 50  0001 C CNN
+F 3 "~" H 7850 3400 50  0001 C CNN
+F 4 "5%" V 7735 3400 50  0000 C CNN "Value2"
+F 5 "R" H 7850 3400 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 7850 3400 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 7850 3400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    7850 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DA7B4A
+P 6950 3400
+AR Path="/61DA7B4A" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61DA7B4A" Ref="R33"  Part="1" 
+F 0 "R33" V 6653 3400 50  0000 C CNN
+F 1 "10K" V 6744 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6880 3400 50  0001 C CNN
+F 3 "~" H 6950 3400 50  0001 C CNN
+F 4 "5%" V 6835 3400 50  0000 C CNN "Value2"
+F 5 "R" H 6950 3400 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 6950 3400 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 6950 3400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6950 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61DA7B40
+P 6650 3100
+AR Path="/61DA7B40" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61DA7B40" Ref="R32"  Part="1" 
+F 0 "R32" H 6581 3191 50  0000 R CNN
+F 1 "1K" H 6581 3100 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6580 3100 50  0001 C CNN
+F 3 "~" H 6650 3100 50  0001 C CNN
+F 4 "5%" H 6581 3009 50  0000 R CNN "Value2"
+F 5 "R" H 6650 3100 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 6650 3100 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 6650 3100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6650 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3250 6650 3400
+Wire Wire Line
+	6650 3400 6800 3400
+Connection ~ 6650 3400
+Wire Wire Line
+	6650 3400 6650 3600
+Wire Wire Line
+	8000 3400 8150 3400
+Connection ~ 8150 3400
+Wire Wire Line
+	8150 3400 8150 3600
+Wire Wire Line
+	6650 2950 6650 2850
+Wire Wire Line
+	8150 2850 8150 2950
+Wire Wire Line
+	7550 3800 7250 3400
+Wire Wire Line
+	7100 3400 7250 3400
+Wire Wire Line
+	7550 3400 7250 3800
+Wire Wire Line
+	7550 3400 7700 3400
+Wire Wire Line
+	6650 2850 7400 2850
+Wire Wire Line
+	7400 2800 7400 2850
+Connection ~ 7400 2850
+Wire Wire Line
+	7400 2850 8150 2850
+$Comp
+L power:GND #PWR034
+U 1 1 61DA7B25
+P 6650 4050
+F 0 "#PWR034" H 6650 3800 50  0001 C CNN
+F 1 "GND" H 6655 3877 50  0000 C CNN
+F 2 "" H 6650 4050 50  0001 C CNN
+F 3 "" H 6650 4050 50  0001 C CNN
+	1    6650 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4050 6650 4000
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61DA7B1E
+P 6750 3800
+AR Path="/61DA7B1E" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61DA7B1E" Ref="Q25"  Part="1" 
+F 0 "Q25" H 6941 3846 50  0000 L CNN
+F 1 "BC848" H 6941 3755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6950 3725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 6750 3800 50  0001 L CNN
+F 4 "Q" H 6750 3800 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 6750 3800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6750 3800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 6750 3800 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 6750 3800 50  0001 C CNN "Spice_Node_Sequence"
+	1    6750 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3800 7800 3800
+Wire Wire Line
+	6950 3800 7000 3800
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61DA7B11
+P 6900 4500
+AR Path="/61DA7B11" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61DA7B11" Ref="Q26"  Part="1" 
+F 0 "Q26" H 7091 4546 50  0000 L CNN
+F 1 "BC848" H 7091 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7100 4425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 6900 4500 50  0001 L CNN
+F 4 "Q" H 6900 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 6900 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6900 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 6900 4500 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 6900 4500 50  0001 C CNN "Spice_Node_Sequence"
+	1    6900 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 7800 3800
+Wire Wire Line
+	7800 3800 7850 3800
+Wire Wire Line
+	7000 3800 7000 4300
+Connection ~ 7000 3800
+Wire Wire Line
+	7000 3800 7250 3800
+$Comp
+L power:GND #PWR036
+U 1 1 61DA7B01
+P 7400 4800
+F 0 "#PWR036" H 7400 4550 50  0001 C CNN
+F 1 "GND" H 7405 4627 50  0000 C CNN
+F 2 "" H 7400 4800 50  0001 C CNN
+F 3 "" H 7400 4800 50  0001 C CNN
+	1    7400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4750 7400 4750
+Wire Wire Line
+	7400 4750 7400 4800
+Wire Wire Line
+	7400 4750 7000 4750
+Wire Wire Line
+	7000 4700 7000 4750
+Connection ~ 7400 4750
+$Comp
+L Device:R R?
+U 1 1 61DA7AF6
+P 6500 4500
+AR Path="/61DA7AF6" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61DA7AF6" Ref="R31"  Part="1" 
+F 0 "R31" V 6615 4500 50  0000 C CNN
+F 1 "10K" V 6706 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6430 4500 50  0001 C CNN
+F 3 "~" H 6500 4500 50  0001 C CNN
+F 4 "5%" V 6797 4500 50  0000 C CNN "Value2"
+F 5 "R" H 6500 4500 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 6500 4500 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 6500 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6500 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 4500 6700 4500
+Wire Wire Line
+	7800 3800 7800 4300
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61DA7ADE
+P 7900 4500
+AR Path="/61DA7ADE" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61DA7ADE" Ref="Q27"  Part="1" 
+F 0 "Q27" H 8091 4546 50  0000 L CNN
+F 1 "BC848" H 8091 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8100 4425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 7900 4500 50  0001 L CNN
+F 4 "Q" H 7900 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 7900 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7900 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 7900 4500 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 7900 4500 50  0001 C CNN "Spice_Node_Sequence"
+	1    7900 4500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4700 7800 4750
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61DA7AD2
+P 9350 3400
+AR Path="/61DA7AD2" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61DA7AD2" Ref="Q30"  Part="1" 
+F 0 "Q30" H 9541 3446 50  0000 L CNN
+F 1 "BC848" H 9541 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9550 3325 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 9350 3400 50  0001 L CNN
+F 4 "Q" H 9350 3400 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 9350 3400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 9350 3400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 9350 3400 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 9350 3400 50  0001 C CNN "Spice_Node_Sequence"
+	1    9350 3400
+	1    0    0    -1  
+$EndComp
+Text Notes 8000 4450 0    50   ~ 0
+SET
+Text Notes 6550 4450 0    50   ~ 0
+RESET
+$Comp
+L power:GND #PWR039
+U 1 1 61DA7AC4
+P 9700 3700
+F 0 "#PWR039" H 9700 3450 50  0001 C CNN
+F 1 "GND" H 9705 3527 50  0000 C CNN
+F 2 "" H 9700 3700 50  0001 C CNN
+F 3 "" H 9700 3700 50  0001 C CNN
+	1    9700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61DA7ABE
+P 9350 2900
+AR Path="/61DA7ABE" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61DA7ABE" Ref="Q29"  Part="1" 
+F 0 "Q29" H 9541 2946 50  0000 L CNN
+F 1 "BC848" H 9541 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9550 2825 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 9350 2900 50  0001 L CNN
+F 4 "Q" H 9350 2900 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 9350 2900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 9350 2900 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 9350 2900 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 9350 2900 50  0001 C CNN "Spice_Node_Sequence"
+	1    9350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 3100 9450 3200
+$Comp
+L Device:R R?
+U 1 1 61DA7AB2
+P 9450 2150
+AR Path="/61DA7AB2" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61DA7AB2" Ref="R38"  Part="1" 
+F 0 "R38" H 9520 2241 50  0000 L CNN
+F 1 "1K" H 9520 2150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9380 2150 50  0001 C CNN
+F 3 "~" H 9450 2150 50  0001 C CNN
+F 4 "5%" H 9520 2059 50  0000 L CNN "Value2"
+F 5 "R" H 9450 2150 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 9450 2150 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 9450 2150 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    9450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61DA7AA8
+P 9700 1900
+AR Path="/61DA7AA8" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/61DA7AA8" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 9700 1750 50  0001 C CNN
+F 1 "+5V" H 9715 2073 50  0000 C CNN
+F 2 "" H 9700 1900 50  0001 C CNN
+F 3 "" H 9700 1900 50  0001 C CNN
+F 4 "V" H 9700 1900 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 9700 1900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 9700 1900 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    9700 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 2300 9450 2650
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61DA7A9E
+P 9850 2650
+AR Path="/61DA7A9E" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61DA7A9E" Ref="Q31"  Part="1" 
+F 0 "Q31" H 10041 2696 50  0000 L CNN
+F 1 "BC848" H 10041 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10050 2575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 9850 2650 50  0001 L CNN
+F 4 "Q" H 9850 2650 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 9850 2650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 9850 2650 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 9850 2650 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 9850 2650 50  0001 C CNN "Spice_Node_Sequence"
+	1    9850 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 2650 9650 2650
+Connection ~ 9450 2650
+Wire Wire Line
+	9450 2650 9450 2700
+Wire Wire Line
+	9950 3650 9700 3650
+Wire Wire Line
+	9450 3650 9450 3600
+Connection ~ 9700 3650
+Wire Wire Line
+	9700 3650 9450 3650
+Wire Wire Line
+	9950 2850 9950 3650
+Wire Wire Line
+	9700 3700 9700 3650
+$Comp
+L Device:R R?
+U 1 1 61DA7A8A
+P 9950 2150
+AR Path="/61DA7A8A" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61DA7A8A" Ref="R39"  Part="1" 
+F 0 "R39" H 10020 2241 50  0000 L CNN
+F 1 "1K" H 10020 2150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9880 2150 50  0001 C CNN
+F 3 "~" H 9950 2150 50  0001 C CNN
+F 4 "5%" H 10020 2059 50  0000 L CNN "Value2"
+F 5 "R" H 9950 2150 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 9950 2150 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 9950 2150 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    9950 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 2000 9950 1950
+Wire Wire Line
+	9950 1950 9700 1950
+Wire Wire Line
+	9700 1950 9700 1900
+Wire Wire Line
+	9450 2000 9450 1950
+Wire Wire Line
+	9450 1950 9700 1950
+Connection ~ 9700 1950
+Wire Wire Line
+	9950 2300 9950 2350
+Text Label 8650 4500 2    50   ~ 0
+LATCH_1_OUT
+Wire Wire Line
+	9950 2350 10500 2350
+Connection ~ 9950 2350
+Wire Wire Line
+	9950 2350 9950 2450
+Wire Wire Line
+	8950 2350 8950 2300
+Wire Wire Line
+	8950 2300 8750 2300
+Text Label 8750 2300 0    50   ~ 0
+CLK
+Text Label 10500 2350 2    50   ~ 0
+LATCH_2_OUT
+Wire Wire Line
+	12700 2100 12500 2100
+Wire Wire Line
+	13000 2100 13050 2100
+$Comp
+L Device:R R?
+U 1 1 61E9CC32
+P 12850 2100
+AR Path="/61E9CC32" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61E9CC32" Ref="R43"  Part="1" 
+F 0 "R43" V 12553 2100 50  0000 C CNN
+F 1 "1K" V 12644 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12780 2100 50  0001 C CNN
+F 3 "~" H 12850 2100 50  0001 C CNN
+F 4 "5%" V 12735 2100 50  0000 C CNN "Value2"
+F 5 "R" H 12850 2100 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 12850 2100 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 12850 2100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    12850 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13350 1400 13350 1450
+$Comp
+L power:+5V #PWR?
+U 1 1 61E9CC3C
+P 13350 1400
+AR Path="/61E9CC3C" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/61E9CC3C" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 13350 1250 50  0001 C CNN
+F 1 "+5V" H 13365 1573 50  0000 C CNN
+F 2 "" H 13350 1400 50  0001 C CNN
+F 3 "" H 13350 1400 50  0001 C CNN
+F 4 "V" H 13350 1400 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 13350 1400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 13350 1400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    13350 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 2350 13350 2300
+$Comp
+L power:GND #PWR044
+U 1 1 61E9CC43
+P 13350 2350
+F 0 "#PWR044" H 13350 2100 50  0001 C CNN
+F 1 "GND" H 13355 2177 50  0000 C CNN
+F 2 "" H 13350 2350 50  0001 C CNN
+F 3 "" H 13350 2350 50  0001 C CNN
+	1    13350 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 1850 13350 1900
+Connection ~ 13350 1850
+Wire Wire Line
+	13800 2900 13900 2900
+Wire Wire Line
+	13800 1850 13800 2900
+Wire Wire Line
+	13350 1850 13800 1850
+Wire Wire Line
+	13350 1750 13350 1850
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61E9CC54
+P 13250 2100
+AR Path="/61E9CC54" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61E9CC54" Ref="Q35"  Part="1" 
+F 0 "Q35" H 13441 2146 50  0000 L CNN
+F 1 "BC848" H 13441 2055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 13450 2025 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 13250 2100 50  0001 L CNN
+F 4 "Q" H 13250 2100 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 13250 2100 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 13250 2100 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 13250 2100 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 13250 2100 50  0001 C CNN "Spice_Node_Sequence"
+	1    13250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61E9CC5E
+P 13350 1600
+AR Path="/61E9CC5E" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61E9CC5E" Ref="R45"  Part="1" 
+F 0 "R45" H 13420 1691 50  0000 L CNN
+F 1 "1K" H 13420 1600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 13280 1600 50  0001 C CNN
+F 3 "~" H 13350 1600 50  0001 C CNN
+F 4 "5%" H 13420 1509 50  0000 L CNN "Value2"
+F 5 "R" H 13350 1600 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 13350 1600 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 13350 1600 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    13350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14700 2300 14700 2350
+Connection ~ 14450 1950
+Wire Wire Line
+	14200 1950 14450 1950
+Wire Wire Line
+	14200 2000 14200 1950
+Wire Wire Line
+	14450 1950 14450 1900
+Wire Wire Line
+	14700 1950 14450 1950
+Wire Wire Line
+	14700 2000 14700 1950
+$Comp
+L Device:R R?
+U 1 1 61E9CC6F
+P 14700 2150
+AR Path="/61E9CC6F" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61E9CC6F" Ref="R49"  Part="1" 
+F 0 "R49" H 14770 2241 50  0000 L CNN
+F 1 "1K" H 14770 2150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 14630 2150 50  0001 C CNN
+F 3 "~" H 14700 2150 50  0001 C CNN
+F 4 "5%" H 14770 2059 50  0000 L CNN "Value2"
+F 5 "R" H 14700 2150 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 14700 2150 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 14700 2150 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    14700 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 3700 14450 3650
+Wire Wire Line
+	14700 2850 14700 3650
+Wire Wire Line
+	14450 3650 14200 3650
+Connection ~ 14450 3650
+Wire Wire Line
+	14200 3650 14200 3600
+Wire Wire Line
+	14700 3650 14450 3650
+Wire Wire Line
+	14200 2650 14200 2700
+Connection ~ 14200 2650
+Wire Wire Line
+	14200 2650 14400 2650
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61E9CC83
+P 14600 2650
+AR Path="/61E9CC83" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61E9CC83" Ref="Q39"  Part="1" 
+F 0 "Q39" H 14791 2696 50  0000 L CNN
+F 1 "BC848" H 14791 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14800 2575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 14600 2650 50  0001 L CNN
+F 4 "Q" H 14600 2650 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 14600 2650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 14600 2650 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 14600 2650 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 14600 2650 50  0001 C CNN "Spice_Node_Sequence"
+	1    14600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 2300 14200 2650
+$Comp
+L power:+5V #PWR?
+U 1 1 61E9CC8D
+P 14450 1900
+AR Path="/61E9CC8D" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/61E9CC8D" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 14450 1750 50  0001 C CNN
+F 1 "+5V" H 14465 2073 50  0000 C CNN
+F 2 "" H 14450 1900 50  0001 C CNN
+F 3 "" H 14450 1900 50  0001 C CNN
+F 4 "V" H 14450 1900 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 14450 1900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 14450 1900 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    14450 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61E9CC97
+P 14200 2150
+AR Path="/61E9CC97" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61E9CC97" Ref="R48"  Part="1" 
+F 0 "R48" H 14270 2241 50  0000 L CNN
+F 1 "1K" H 14270 2150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 14130 2150 50  0001 C CNN
+F 3 "~" H 14200 2150 50  0001 C CNN
+F 4 "5%" H 14270 2059 50  0000 L CNN "Value2"
+F 5 "R" H 14200 2150 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 14200 2150 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 14200 2150 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    14200 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14200 3100 14200 3200
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61E9CCA3
+P 14100 2900
+AR Path="/61E9CCA3" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61E9CCA3" Ref="Q37"  Part="1" 
+F 0 "Q37" H 14291 2946 50  0000 L CNN
+F 1 "BC848" H 14291 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14300 2825 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 14100 2900 50  0001 L CNN
+F 4 "Q" H 14100 2900 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 14100 2900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 14100 2900 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 14100 2900 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 14100 2900 50  0001 C CNN "Spice_Node_Sequence"
+	1    14100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR047
+U 1 1 61E9CCA9
+P 14450 3700
+F 0 "#PWR047" H 14450 3450 50  0001 C CNN
+F 1 "GND" H 14455 3527 50  0000 C CNN
+F 2 "" H 14450 3700 50  0001 C CNN
+F 3 "" H 14450 3700 50  0001 C CNN
+	1    14450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 3400 13900 3400
+Text Notes 11750 4450 0    50   ~ 0
+RESET
+Text Notes 13200 4450 0    50   ~ 0
+SET
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61E9CCB7
+P 14100 3400
+AR Path="/61E9CCB7" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61E9CCB7" Ref="Q38"  Part="1" 
+F 0 "Q38" H 14291 3446 50  0000 L CNN
+F 1 "BC848" H 14291 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 14300 3325 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 14100 3400 50  0001 L CNN
+F 4 "Q" H 14100 3400 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 14100 3400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 14100 3400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 14100 3400 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 14100 3400 50  0001 C CNN "Spice_Node_Sequence"
+	1    14100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 4700 13000 4750
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61E9CCC3
+P 13100 4500
+AR Path="/61E9CCC3" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61E9CCC3" Ref="Q34"  Part="1" 
+F 0 "Q34" H 13291 4546 50  0000 L CNN
+F 1 "BC848" H 13291 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 13300 4425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 13100 4500 50  0001 L CNN
+F 4 "Q" H 13100 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 13100 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 13100 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 13100 4500 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 13100 4500 50  0001 C CNN "Spice_Node_Sequence"
+	1    13100 4500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 3800 13000 4300
+Wire Wire Line
+	11850 4500 11900 4500
+$Comp
+L Device:R R?
+U 1 1 61E9CCDB
+P 11700 4500
+AR Path="/61E9CCDB" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61E9CCDB" Ref="R40"  Part="1" 
+F 0 "R40" V 11815 4500 50  0000 C CNN
+F 1 "10K" V 11906 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 11630 4500 50  0001 C CNN
+F 3 "~" H 11700 4500 50  0001 C CNN
+F 4 "5%" V 11997 4500 50  0000 C CNN "Value2"
+F 5 "R" H 11700 4500 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 11700 4500 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 11700 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    11700 4500
+	0    1    1    0   
+$EndComp
+Connection ~ 12600 4750
+Wire Wire Line
+	12200 4700 12200 4750
+Wire Wire Line
+	12600 4750 12200 4750
+Wire Wire Line
+	12600 4750 12600 4800
+Wire Wire Line
+	13000 4750 12600 4750
+$Comp
+L power:GND #PWR042
+U 1 1 61E9CCE6
+P 12600 4800
+F 0 "#PWR042" H 12600 4550 50  0001 C CNN
+F 1 "GND" H 12605 4627 50  0000 C CNN
+F 2 "" H 12600 4800 50  0001 C CNN
+F 3 "" H 12600 4800 50  0001 C CNN
+	1    12600 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12200 3800 12450 3800
+Connection ~ 12200 3800
+Wire Wire Line
+	12200 3800 12200 4300
+Wire Wire Line
+	13000 3800 13050 3800
+Connection ~ 13000 3800
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61E9CCF6
+P 12100 4500
+AR Path="/61E9CCF6" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61E9CCF6" Ref="Q33"  Part="1" 
+F 0 "Q33" H 12291 4546 50  0000 L CNN
+F 1 "BC848" H 12291 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 12300 4425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 12100 4500 50  0001 L CNN
+F 4 "Q" H 12100 4500 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 12100 4500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 12100 4500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 12100 4500 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 12100 4500 50  0001 C CNN "Spice_Node_Sequence"
+	1    12100 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12150 3800 12200 3800
+Wire Wire Line
+	12750 3800 13000 3800
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61E9CD03
+P 11950 3800
+AR Path="/61E9CD03" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61E9CD03" Ref="Q32"  Part="1" 
+F 0 "Q32" H 12141 3846 50  0000 L CNN
+F 1 "BC848" H 12141 3755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 12150 3725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 11950 3800 50  0001 L CNN
+F 4 "Q" H 11950 3800 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 11950 3800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 11950 3800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 11950 3800 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 11950 3800 50  0001 C CNN "Spice_Node_Sequence"
+	1    11950 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11850 4050 11850 4000
+$Comp
+L power:GND #PWR040
+U 1 1 61E9CD0A
+P 11850 4050
+F 0 "#PWR040" H 11850 3800 50  0001 C CNN
+F 1 "GND" H 11855 3877 50  0000 C CNN
+F 2 "" H 11850 4050 50  0001 C CNN
+F 3 "" H 11850 4050 50  0001 C CNN
+	1    11850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 2850 13350 2850
+Connection ~ 12600 2850
+Wire Wire Line
+	12600 2800 12600 2850
+Wire Wire Line
+	11850 2850 12600 2850
+Wire Wire Line
+	12750 3400 12900 3400
+Wire Wire Line
+	12750 3400 12450 3800
+Wire Wire Line
+	12300 3400 12450 3400
+Wire Wire Line
+	12750 3800 12450 3400
+Wire Wire Line
+	13350 2850 13350 2950
+Wire Wire Line
+	11850 2950 11850 2850
+Wire Wire Line
+	13350 3400 13350 3600
+Connection ~ 13350 3400
+Wire Wire Line
+	13200 3400 13350 3400
+Wire Wire Line
+	11850 3400 11850 3600
+Connection ~ 11850 3400
+Wire Wire Line
+	11850 3400 12000 3400
+Wire Wire Line
+	11850 3250 11850 3400
+$Comp
+L Device:R R?
+U 1 1 61E9CD25
+P 11850 3100
+AR Path="/61E9CD25" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61E9CD25" Ref="R41"  Part="1" 
+F 0 "R41" H 11781 3191 50  0000 R CNN
+F 1 "1K" H 11781 3100 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 11780 3100 50  0001 C CNN
+F 3 "~" H 11850 3100 50  0001 C CNN
+F 4 "5%" H 11781 3009 50  0000 R CNN "Value2"
+F 5 "R" H 11850 3100 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 11850 3100 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 11850 3100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    11850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61E9CD2F
+P 12150 3400
+AR Path="/61E9CD2F" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61E9CD2F" Ref="R42"  Part="1" 
+F 0 "R42" V 11853 3400 50  0000 C CNN
+F 1 "10K" V 11944 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12080 3400 50  0001 C CNN
+F 3 "~" H 12150 3400 50  0001 C CNN
+F 4 "5%" V 12035 3400 50  0000 C CNN "Value2"
+F 5 "R" H 12150 3400 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 12150 3400 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 12150 3400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    12150 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61E9CD39
+P 13050 3400
+AR Path="/61E9CD39" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61E9CD39" Ref="R44"  Part="1" 
+F 0 "R44" V 12753 3400 50  0000 C CNN
+F 1 "10K" V 12844 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12980 3400 50  0001 C CNN
+F 3 "~" H 13050 3400 50  0001 C CNN
+F 4 "5%" V 12935 3400 50  0000 C CNN "Value2"
+F 5 "R" H 13050 3400 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 13050 3400 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 13050 3400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    13050 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13350 3250 13350 3400
+Wire Wire Line
+	13350 4000 13350 4050
+$Comp
+L power:GND #PWR045
+U 1 1 61E9CD41
+P 13350 4050
+F 0 "#PWR045" H 13350 3800 50  0001 C CNN
+F 1 "GND" H 13355 3877 50  0000 C CNN
+F 2 "" H 13350 4050 50  0001 C CNN
+F 3 "" H 13350 4050 50  0001 C CNN
+	1    13350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61E9CD4A
+P 12600 2800
+AR Path="/61E9CD4A" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/61E9CD4A" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 12600 2650 50  0001 C CNN
+F 1 "+5V" H 12615 2973 50  0000 C CNN
+F 2 "" H 12600 2800 50  0001 C CNN
+F 3 "" H 12600 2800 50  0001 C CNN
+F 4 "V" H 12600 2800 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 12600 2800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 12600 2800 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    12600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61E9CD54
+P 13350 3100
+AR Path="/61E9CD54" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61E9CD54" Ref="R46"  Part="1" 
+F 0 "R46" H 13420 3191 50  0000 L CNN
+F 1 "1K" H 13420 3100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 13280 3100 50  0001 C CNN
+F 3 "~" H 13350 3100 50  0001 C CNN
+F 4 "5%" H 13420 3009 50  0000 L CNN "Value2"
+F 5 "R" H 13350 3100 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 13350 3100 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 13350 3100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    13350 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61E9CD5F
+P 13250 3800
+AR Path="/61E9CD5F" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61E9CD5F" Ref="Q36"  Part="1" 
+F 0 "Q36" H 13441 3846 50  0000 L CNN
+F 1 "BC848" H 13441 3755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 13450 3725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 13250 3800 50  0001 L CNN
+F 4 "Q" H 13250 3800 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 13250 3800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 13250 3800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 13250 3800 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 13250 3800 50  0001 C CNN "Spice_Node_Sequence"
+	1    13250 3800
+	1    0    0    -1  
+$EndComp
+Text Label 12500 2100 0    50   ~ 0
+CLK
+Connection ~ 14700 2350
+Wire Wire Line
+	14700 2350 14700 2450
+Text Label 15250 2350 2    50   ~ 0
+LATCH_3_OUT
+Wire Wire Line
+	14700 2350 15250 2350
+Text Label 13850 4500 2    50   ~ 0
+LATCH_2_OUT
+Wire Wire Line
+	13100 8500 13300 8500
+Wire Wire Line
+	4300 7750 4500 7750
+Wire Wire Line
+	4300 7500 4300 7750
+$Comp
+L Device:R R?
+U 1 1 61EFA93C
+P 4300 7350
+AR Path="/61EFA93C" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61EFA93C" Ref="R26"  Part="1" 
+F 0 "R26" H 4370 7441 50  0000 L CNN
+F 1 "1K" H 4370 7350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4230 7350 50  0001 C CNN
+F 3 "~" H 4300 7350 50  0001 C CNN
+F 4 "5%" H 4370 7259 50  0000 L CNN "Value2"
+F 5 "R" H 4300 7350 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 4300 7350 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 4300 7350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4300 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61EFA947
+P 3400 8650
+AR Path="/61EFA947" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61EFA947" Ref="Q18"  Part="1" 
+F 0 "Q18" H 3591 8696 50  0000 L CNN
+F 1 "BC848" H 3591 8605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3600 8575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3400 8650 50  0001 L CNN
+F 4 "Q" H 3400 8650 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 3400 8650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3400 8650 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 3400 8650 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 3400 8650 50  0001 C CNN "Spice_Node_Sequence"
+	1    3400 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFA951
+P 3500 7950
+AR Path="/61EFA951" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61EFA951" Ref="R24"  Part="1" 
+F 0 "R24" H 3570 8041 50  0000 L CNN
+F 1 "1K" H 3570 7950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3430 7950 50  0001 C CNN
+F 3 "~" H 3500 7950 50  0001 C CNN
+F 4 "5%" H 3570 7859 50  0000 L CNN "Value2"
+F 5 "R" H 3500 7950 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 3500 7950 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 3500 7950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3500 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61EFA95A
+P 2750 7650
+AR Path="/61EFA95A" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/61EFA95A" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 2750 7500 50  0001 C CNN
+F 1 "+5V" H 2765 7823 50  0000 C CNN
+F 2 "" H 2750 7650 50  0001 C CNN
+F 3 "" H 2750 7650 50  0001 C CNN
+F 4 "V" H 2750 7650 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 2750 7650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2750 7650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2750 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 61EFA960
+P 3500 8900
+F 0 "#PWR029" H 3500 8650 50  0001 C CNN
+F 1 "GND" H 3505 8727 50  0000 C CNN
+F 2 "" H 3500 8900 50  0001 C CNN
+F 3 "" H 3500 8900 50  0001 C CNN
+	1    3500 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 8850 3500 8900
+Wire Wire Line
+	3500 8100 3500 8250
+$Comp
+L Device:R R?
+U 1 1 61EFA96C
+P 3200 8250
+AR Path="/61EFA96C" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61EFA96C" Ref="R22"  Part="1" 
+F 0 "R22" V 2903 8250 50  0000 C CNN
+F 1 "10K" V 2994 8250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 3130 8250 50  0001 C CNN
+F 3 "~" H 3200 8250 50  0001 C CNN
+F 4 "5%" V 3085 8250 50  0000 C CNN "Value2"
+F 5 "R" H 3200 8250 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 3200 8250 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 3200 8250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3200 8250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFA976
+P 2300 8250
+AR Path="/61EFA976" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61EFA976" Ref="R20"  Part="1" 
+F 0 "R20" V 2003 8250 50  0000 C CNN
+F 1 "10K" V 2094 8250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 2230 8250 50  0001 C CNN
+F 3 "~" H 2300 8250 50  0001 C CNN
+F 4 "5%" V 2185 8250 50  0000 C CNN "Value2"
+F 5 "R" H 2300 8250 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 2300 8250 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 2300 8250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2300 8250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61EFA980
+P 2000 7950
+AR Path="/61EFA980" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61EFA980" Ref="R19"  Part="1" 
+F 0 "R19" H 1931 8041 50  0000 R CNN
+F 1 "1K" H 1931 7950 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1930 7950 50  0001 C CNN
+F 3 "~" H 2000 7950 50  0001 C CNN
+F 4 "5%" H 1931 7859 50  0000 R CNN "Value2"
+F 5 "R" H 2000 7950 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 2000 7950 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 2000 7950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2000 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 8100 2000 8250
+Wire Wire Line
+	2000 8250 2150 8250
+Connection ~ 2000 8250
+Wire Wire Line
+	2000 8250 2000 8450
+Wire Wire Line
+	3350 8250 3500 8250
+Connection ~ 3500 8250
+Wire Wire Line
+	3500 8250 3500 8450
+Wire Wire Line
+	2000 7800 2000 7700
+Wire Wire Line
+	3500 7700 3500 7800
+Wire Wire Line
+	2900 8650 2600 8250
+Wire Wire Line
+	2450 8250 2600 8250
+Wire Wire Line
+	2900 8250 2600 8650
+Wire Wire Line
+	2900 8250 3050 8250
+Wire Wire Line
+	2000 7700 2750 7700
+Wire Wire Line
+	2750 7650 2750 7700
+Connection ~ 2750 7700
+Wire Wire Line
+	2750 7700 3500 7700
+$Comp
+L power:GND #PWR024
+U 1 1 61EFA997
+P 2000 8900
+F 0 "#PWR024" H 2000 8650 50  0001 C CNN
+F 1 "GND" H 2005 8727 50  0000 C CNN
+F 2 "" H 2000 8900 50  0001 C CNN
+F 3 "" H 2000 8900 50  0001 C CNN
+	1    2000 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 8900 2000 8850
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61EFA9A3
+P 2100 8650
+AR Path="/61EFA9A3" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61EFA9A3" Ref="Q14"  Part="1" 
+F 0 "Q14" H 2291 8696 50  0000 L CNN
+F 1 "BC848" H 2291 8605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 8575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 2100 8650 50  0001 L CNN
+F 4 "Q" H 2100 8650 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 2100 8650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2100 8650 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 2100 8650 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 2100 8650 50  0001 C CNN "Spice_Node_Sequence"
+	1    2100 8650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 8650 3150 8650
+Wire Wire Line
+	2300 8650 2350 8650
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61EFA9B0
+P 2250 9350
+AR Path="/61EFA9B0" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61EFA9B0" Ref="Q15"  Part="1" 
+F 0 "Q15" H 2441 9396 50  0000 L CNN
+F 1 "BC848" H 2441 9305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 9275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 2250 9350 50  0001 L CNN
+F 4 "Q" H 2250 9350 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 2250 9350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2250 9350 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 2250 9350 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 2250 9350 50  0001 C CNN "Spice_Node_Sequence"
+	1    2250 9350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3150 8650
+Wire Wire Line
+	3150 8650 3200 8650
+Wire Wire Line
+	2350 8650 2350 9150
+Connection ~ 2350 8650
+Wire Wire Line
+	2350 8650 2600 8650
+$Comp
+L power:GND #PWR026
+U 1 1 61EFA9BB
+P 2750 9650
+F 0 "#PWR026" H 2750 9400 50  0001 C CNN
+F 1 "GND" H 2755 9477 50  0000 C CNN
+F 2 "" H 2750 9650 50  0001 C CNN
+F 3 "" H 2750 9650 50  0001 C CNN
+	1    2750 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 9600 2750 9600
+Wire Wire Line
+	2750 9600 2750 9650
+Wire Wire Line
+	2750 9600 2350 9600
+Wire Wire Line
+	2350 9550 2350 9600
+Connection ~ 2750 9600
+$Comp
+L Device:R R?
+U 1 1 61EFA9CA
+P 1850 9350
+AR Path="/61EFA9CA" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61EFA9CA" Ref="R18"  Part="1" 
+F 0 "R18" V 1965 9350 50  0000 C CNN
+F 1 "10K" V 2056 9350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 1780 9350 50  0001 C CNN
+F 3 "~" H 1850 9350 50  0001 C CNN
+F 4 "5%" V 2147 9350 50  0000 C CNN "Value2"
+F 5 "R" H 1850 9350 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 1850 9350 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 1850 9350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1850 9350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 9350 2050 9350
+Wire Wire Line
+	3150 8650 3150 9150
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61EFA9E2
+P 3250 9350
+AR Path="/61EFA9E2" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61EFA9E2" Ref="Q16"  Part="1" 
+F 0 "Q16" H 3441 9396 50  0000 L CNN
+F 1 "BC848" H 3441 9305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3450 9275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3250 9350 50  0001 L CNN
+F 4 "Q" H 3250 9350 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 3250 9350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3250 9350 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 3250 9350 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 3250 9350 50  0001 C CNN "Spice_Node_Sequence"
+	1    3250 9350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 9550 3150 9600
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61EFA9EE
+P 4700 8250
+AR Path="/61EFA9EE" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61EFA9EE" Ref="Q22"  Part="1" 
+F 0 "Q22" H 4891 8296 50  0000 L CNN
+F 1 "BC848" H 4891 8205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4900 8175 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 4700 8250 50  0001 L CNN
+F 4 "Q" H 4700 8250 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 4700 8250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4700 8250 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 4700 8250 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 4700 8250 50  0001 C CNN "Spice_Node_Sequence"
+	1    4700 8250
+	1    0    0    -1  
+$EndComp
+Text Notes 3350 9300 0    50   ~ 0
+SET
+Text Notes 1900 9300 0    50   ~ 0
+RESET
+$Comp
+L power:GND #PWR033
+U 1 1 61EFA9F7
+P 5050 8550
+F 0 "#PWR033" H 5050 8300 50  0001 C CNN
+F 1 "GND" H 5055 8377 50  0000 C CNN
+F 2 "" H 5050 8550 50  0001 C CNN
+F 3 "" H 5050 8550 50  0001 C CNN
+	1    5050 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61EFAA02
+P 4700 7750
+AR Path="/61EFAA02" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61EFAA02" Ref="Q21"  Part="1" 
+F 0 "Q21" H 4891 7796 50  0000 L CNN
+F 1 "BC848" H 4891 7705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4900 7675 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 4700 7750 50  0001 L CNN
+F 4 "Q" H 4700 7750 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 4700 7750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4700 7750 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 4700 7750 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 4700 7750 50  0001 C CNN "Spice_Node_Sequence"
+	1    4700 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 7950 4800 8050
+$Comp
+L Device:R R?
+U 1 1 61EFAA0D
+P 4800 7000
+AR Path="/61EFAA0D" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61EFAA0D" Ref="R28"  Part="1" 
+F 0 "R28" H 4870 7091 50  0000 L CNN
+F 1 "1K" H 4870 7000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 4730 7000 50  0001 C CNN
+F 3 "~" H 4800 7000 50  0001 C CNN
+F 4 "5%" H 4870 6909 50  0000 L CNN "Value2"
+F 5 "R" H 4800 7000 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 4800 7000 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 4800 7000 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4800 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61EFAA16
+P 5050 6750
+AR Path="/61EFAA16" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/61EFAA16" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 5050 6600 50  0001 C CNN
+F 1 "+5V" H 5065 6923 50  0000 C CNN
+F 2 "" H 5050 6750 50  0001 C CNN
+F 3 "" H 5050 6750 50  0001 C CNN
+F 4 "V" H 5050 6750 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 5050 6750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5050 6750 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5050 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 7150 4800 7500
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 61EFAA22
+P 5200 7500
+AR Path="/61EFAA22" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/61EFAA22" Ref="Q24"  Part="1" 
+F 0 "Q24" H 5391 7546 50  0000 L CNN
+F 1 "BC848" H 5391 7455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5400 7425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 5200 7500 50  0001 L CNN
+F 4 "Q" H 5200 7500 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 5200 7500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5200 7500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 5200 7500 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 5200 7500 50  0001 C CNN "Spice_Node_Sequence"
+	1    5200 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 7500 5000 7500
+Connection ~ 4800 7500
+Wire Wire Line
+	4800 7500 4800 7550
+Wire Wire Line
+	5300 8500 5050 8500
+Wire Wire Line
+	4800 8500 4800 8450
+Connection ~ 5050 8500
+Wire Wire Line
+	5050 8500 4800 8500
+Wire Wire Line
+	5300 7700 5300 8500
+Wire Wire Line
+	5050 8550 5050 8500
+$Comp
+L Device:R R?
+U 1 1 61EFAA35
+P 5300 7000
+AR Path="/61EFAA35" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/61EFAA35" Ref="R30"  Part="1" 
+F 0 "R30" H 5370 7091 50  0000 L CNN
+F 1 "1K" H 5370 7000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5230 7000 50  0001 C CNN
+F 3 "~" H 5300 7000 50  0001 C CNN
+F 4 "5%" H 5370 6909 50  0000 L CNN "Value2"
+F 5 "R" H 5300 7000 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 5300 7000 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 5300 7000 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5300 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6850 5300 6800
+Wire Wire Line
+	5300 6800 5050 6800
+Wire Wire Line
+	5050 6800 5050 6750
+Wire Wire Line
+	4800 6850 4800 6800
+Wire Wire Line
+	4800 6800 5050 6800
+Connection ~ 5050 6800
+Wire Wire Line
+	5300 7150 5300 7200
+Text Label 4000 9350 2    50   ~ 0
+LATCH_3_OUT
+Wire Wire Line
+	5300 7200 5850 7200
+Connection ~ 5300 7200
+Wire Wire Line
+	5300 7200 5300 7300
+Wire Wire Line
+	4300 7200 4300 7150
+Wire Wire Line
+	4300 7150 4100 7150
+Text Label 4100 7150 0    50   ~ 0
+CLK
+Text Label 5850 7200 2    50   ~ 0
+LATCH_4_OUT
+Text HLabel 8500 3600 2    50   Output ~ 0
+COUNTER_BIT_0
+Wire Wire Line
+	8150 3400 8450 3400
+Wire Wire Line
+	8450 3400 8450 3600
+Wire Wire Line
+	8450 3600 8500 3600
+Wire Wire Line
+	8450 3400 9150 3400
+Connection ~ 8450 3400
+Wire Wire Line
+	8500 7750 8700 7750
+Wire Wire Line
+	8500 7500 8500 7750
+$Comp
+L Device:R R?
+U 1 1 62020534
+P 8500 7350
+AR Path="/62020534" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/62020534" Ref="R?"  Part="1" 
+F 0 "R?" H 8570 7441 50  0000 L CNN
+F 1 "1K" H 8570 7350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8430 7350 50  0001 C CNN
+F 3 "~" H 8500 7350 50  0001 C CNN
+F 4 "5%" H 8570 7259 50  0000 L CNN "Value2"
+F 5 "R" H 8500 7350 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 8500 7350 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 8500 7350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8500 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 6202053F
+P 8050 8650
+AR Path="/6202053F" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/6202053F" Ref="Q?"  Part="1" 
+F 0 "Q?" H 8241 8696 50  0000 L CNN
+F 1 "BC848" H 8241 8605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8250 8575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 8050 8650 50  0001 L CNN
+F 4 "Q" H 8050 8650 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 8050 8650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8050 8650 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 8050 8650 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 8050 8650 50  0001 C CNN "Spice_Node_Sequence"
+	1    8050 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62020549
+P 8150 7950
+AR Path="/62020549" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/62020549" Ref="R?"  Part="1" 
+F 0 "R?" H 8220 8041 50  0000 L CNN
+F 1 "1K" H 8220 7950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8080 7950 50  0001 C CNN
+F 3 "~" H 8150 7950 50  0001 C CNN
+F 4 "5%" H 8220 7859 50  0000 L CNN "Value2"
+F 5 "R" H 8150 7950 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 8150 7950 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 8150 7950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8150 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 62020552
+P 7400 7650
+AR Path="/62020552" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/62020552" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7400 7500 50  0001 C CNN
+F 1 "+5V" H 7415 7823 50  0000 C CNN
+F 2 "" H 7400 7650 50  0001 C CNN
+F 3 "" H 7400 7650 50  0001 C CNN
+F 4 "V" H 7400 7650 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 7400 7650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7400 7650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    7400 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62020558
+P 8150 8900
+F 0 "#PWR?" H 8150 8650 50  0001 C CNN
+F 1 "GND" H 8155 8727 50  0000 C CNN
+F 2 "" H 8150 8900 50  0001 C CNN
+F 3 "" H 8150 8900 50  0001 C CNN
+	1    8150 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 8850 8150 8900
+Wire Wire Line
+	8150 8100 8150 8250
+$Comp
+L Device:R R?
+U 1 1 62020564
+P 7850 8250
+AR Path="/62020564" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/62020564" Ref="R?"  Part="1" 
+F 0 "R?" V 7553 8250 50  0000 C CNN
+F 1 "10K" V 7644 8250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 7780 8250 50  0001 C CNN
+F 3 "~" H 7850 8250 50  0001 C CNN
+F 4 "5%" V 7735 8250 50  0000 C CNN "Value2"
+F 5 "R" H 7850 8250 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 7850 8250 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 7850 8250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    7850 8250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6202056E
+P 6950 8250
+AR Path="/6202056E" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/6202056E" Ref="R?"  Part="1" 
+F 0 "R?" V 6653 8250 50  0000 C CNN
+F 1 "10K" V 6744 8250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6880 8250 50  0001 C CNN
+F 3 "~" H 6950 8250 50  0001 C CNN
+F 4 "5%" V 6835 8250 50  0000 C CNN "Value2"
+F 5 "R" H 6950 8250 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 6950 8250 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 6950 8250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6950 8250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62020578
+P 6650 7950
+AR Path="/62020578" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/62020578" Ref="R?"  Part="1" 
+F 0 "R?" H 6581 8041 50  0000 R CNN
+F 1 "1K" H 6581 7950 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6580 7950 50  0001 C CNN
+F 3 "~" H 6650 7950 50  0001 C CNN
+F 4 "5%" H 6581 7859 50  0000 R CNN "Value2"
+F 5 "R" H 6650 7950 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 6650 7950 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 6650 7950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6650 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 8100 6650 8250
+Wire Wire Line
+	6650 8250 6800 8250
+Connection ~ 6650 8250
+Wire Wire Line
+	6650 8250 6650 8450
+Wire Wire Line
+	8000 8250 8150 8250
+Connection ~ 8150 8250
+Wire Wire Line
+	8150 8250 8150 8450
+Wire Wire Line
+	6650 7800 6650 7700
+Wire Wire Line
+	8150 7700 8150 7800
+Wire Wire Line
+	7550 8650 7250 8250
+Wire Wire Line
+	7100 8250 7250 8250
+Wire Wire Line
+	7550 8250 7250 8650
+Wire Wire Line
+	7550 8250 7700 8250
+Wire Wire Line
+	6650 7700 7400 7700
+Wire Wire Line
+	7400 7650 7400 7700
+Connection ~ 7400 7700
+Wire Wire Line
+	7400 7700 8150 7700
+$Comp
+L power:GND #PWR?
+U 1 1 6202058F
+P 6650 8900
+F 0 "#PWR?" H 6650 8650 50  0001 C CNN
+F 1 "GND" H 6655 8727 50  0000 C CNN
+F 2 "" H 6650 8900 50  0001 C CNN
+F 3 "" H 6650 8900 50  0001 C CNN
+	1    6650 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 8900 6650 8850
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 6202059B
+P 6750 8650
+AR Path="/6202059B" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/6202059B" Ref="Q?"  Part="1" 
+F 0 "Q?" H 6941 8696 50  0000 L CNN
+F 1 "BC848" H 6941 8605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6950 8575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 6750 8650 50  0001 L CNN
+F 4 "Q" H 6750 8650 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 6750 8650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6750 8650 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 6750 8650 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 6750 8650 50  0001 C CNN "Spice_Node_Sequence"
+	1    6750 8650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 8650 7800 8650
+Wire Wire Line
+	6950 8650 7000 8650
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 620205A8
+P 6900 9350
+AR Path="/620205A8" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/620205A8" Ref="Q?"  Part="1" 
+F 0 "Q?" H 7091 9396 50  0000 L CNN
+F 1 "BC848" H 7091 9305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7100 9275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 6900 9350 50  0001 L CNN
+F 4 "Q" H 6900 9350 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 6900 9350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6900 9350 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 6900 9350 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 6900 9350 50  0001 C CNN "Spice_Node_Sequence"
+	1    6900 9350
+	1    0    0    -1  
+$EndComp
+Connection ~ 7800 8650
+Wire Wire Line
+	7800 8650 7850 8650
+Wire Wire Line
+	7000 8650 7000 9150
+Connection ~ 7000 8650
+Wire Wire Line
+	7000 8650 7250 8650
+$Comp
+L power:GND #PWR?
+U 1 1 620205B3
+P 7400 9650
+F 0 "#PWR?" H 7400 9400 50  0001 C CNN
+F 1 "GND" H 7405 9477 50  0000 C CNN
+F 2 "" H 7400 9650 50  0001 C CNN
+F 3 "" H 7400 9650 50  0001 C CNN
+	1    7400 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 9600 7400 9600
+Wire Wire Line
+	7400 9600 7400 9650
+Wire Wire Line
+	7400 9600 7000 9600
+Wire Wire Line
+	7000 9550 7000 9600
+Connection ~ 7400 9600
+Wire Wire Line
+	7800 8650 7800 9150
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 620205DA
+P 7900 9350
+AR Path="/620205DA" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/620205DA" Ref="Q?"  Part="1" 
+F 0 "Q?" H 8091 9396 50  0000 L CNN
+F 1 "BC848" H 8091 9305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8100 9275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 7900 9350 50  0001 L CNN
+F 4 "Q" H 7900 9350 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 7900 9350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7900 9350 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 7900 9350 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 7900 9350 50  0001 C CNN "Spice_Node_Sequence"
+	1    7900 9350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 9550 7800 9600
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 620205E6
+P 8900 8250
+AR Path="/620205E6" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/620205E6" Ref="Q?"  Part="1" 
+F 0 "Q?" H 9091 8296 50  0000 L CNN
+F 1 "BC848" H 9091 8205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9100 8175 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 8900 8250 50  0001 L CNN
+F 4 "Q" H 8900 8250 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 8900 8250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8900 8250 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 8900 8250 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 8900 8250 50  0001 C CNN "Spice_Node_Sequence"
+	1    8900 8250
+	1    0    0    -1  
+$EndComp
+Text Notes 8000 9300 0    50   ~ 0
+SET
+Text Notes 6550 9300 0    50   ~ 0
+RESET
+$Comp
+L power:GND #PWR?
+U 1 1 620205EE
+P 9250 8550
+F 0 "#PWR?" H 9250 8300 50  0001 C CNN
+F 1 "GND" H 9255 8377 50  0000 C CNN
+F 2 "" H 9250 8550 50  0001 C CNN
+F 3 "" H 9250 8550 50  0001 C CNN
+	1    9250 8550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 620205F9
+P 8900 7750
+AR Path="/620205F9" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/620205F9" Ref="Q?"  Part="1" 
+F 0 "Q?" H 9091 7796 50  0000 L CNN
+F 1 "BC848" H 9091 7705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9100 7675 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 8900 7750 50  0001 L CNN
+F 4 "Q" H 8900 7750 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 8900 7750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8900 7750 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 8900 7750 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 8900 7750 50  0001 C CNN "Spice_Node_Sequence"
+	1    8900 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 7950 9000 8050
+$Comp
+L Device:R R?
+U 1 1 62020604
+P 9000 7000
+AR Path="/62020604" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/62020604" Ref="R?"  Part="1" 
+F 0 "R?" H 9070 7091 50  0000 L CNN
+F 1 "1K" H 9070 7000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8930 7000 50  0001 C CNN
+F 3 "~" H 9000 7000 50  0001 C CNN
+F 4 "5%" H 9070 6909 50  0000 L CNN "Value2"
+F 5 "R" H 9000 7000 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 9000 7000 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 9000 7000 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    9000 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6202060D
+P 9250 6750
+AR Path="/6202060D" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/6202060D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9250 6600 50  0001 C CNN
+F 1 "+5V" H 9265 6923 50  0000 C CNN
+F 2 "" H 9250 6750 50  0001 C CNN
+F 3 "" H 9250 6750 50  0001 C CNN
+F 4 "V" H 9250 6750 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 9250 6750 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 9250 6750 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    9250 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 7150 9000 7500
+$Comp
+L Transistor_BJT:BC848 Q?
+U 1 1 62020619
+P 9400 7500
+AR Path="/62020619" Ref="Q?"  Part="1" 
+AR Path="/61D90E9A/62020619" Ref="Q?"  Part="1" 
+F 0 "Q?" H 9591 7546 50  0000 L CNN
+F 1 "BC848" H 9591 7455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9600 7425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 9400 7500 50  0001 L CNN
+F 4 "Q" H 9400 7500 50  0001 C CNN "Spice_Primitive"
+F 5 "BC848" H 9400 7500 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 9400 7500 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC848.lib" H 9400 7500 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 9400 7500 50  0001 C CNN "Spice_Node_Sequence"
+	1    9400 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 7500 9200 7500
+Connection ~ 9000 7500
+Wire Wire Line
+	9000 7500 9000 7550
+Wire Wire Line
+	9500 8500 9250 8500
+Wire Wire Line
+	9000 8500 9000 8450
+Connection ~ 9250 8500
+Wire Wire Line
+	9250 8500 9000 8500
+Wire Wire Line
+	9500 7700 9500 8500
+Wire Wire Line
+	9250 8550 9250 8500
+$Comp
+L Device:R R?
+U 1 1 6202062C
+P 9500 7000
+AR Path="/6202062C" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/6202062C" Ref="R?"  Part="1" 
+F 0 "R?" H 9570 7091 50  0000 L CNN
+F 1 "1K" H 9570 7000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9430 7000 50  0001 C CNN
+F 3 "~" H 9500 7000 50  0001 C CNN
+F 4 "5%" H 9570 6909 50  0000 L CNN "Value2"
+F 5 "R" H 9500 7000 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 9500 7000 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 9500 7000 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    9500 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 6850 9500 6800
+Wire Wire Line
+	9500 6800 9250 6800
+Wire Wire Line
+	9250 6800 9250 6750
+Wire Wire Line
+	9000 6850 9000 6800
+Wire Wire Line
+	9000 6800 9250 6800
+Connection ~ 9250 6800
+Wire Wire Line
+	9500 7150 9500 7200
+Text Label 8650 9350 2    50   ~ 0
+LATCH_4_OUT
+Wire Wire Line
+	9500 7200 9750 7200
+Connection ~ 9500 7200
+Wire Wire Line
+	9500 7200 9500 7300
+Wire Wire Line
+	8500 7200 8500 7150
+Wire Wire Line
+	8500 7150 8300 7150
+Text Label 8300 7150 0    50   ~ 0
+CLK
+Text Label 10600 6750 2    50   ~ 0
+RESET
+Wire Wire Line
+	8100 4500 8650 4500
+Wire Wire Line
+	13300 4500 13850 4500
+Wire Wire Line
+	3450 9350 4000 9350
+Wire Wire Line
+	8100 9350 8650 9350
+Wire Wire Line
+	8150 8250 8700 8250
+Wire Wire Line
+	3500 8250 3800 8250
+Text HLabel 3850 8450 2    50   Output ~ 0
+COUNTER_BIT_1
+Wire Wire Line
+	3800 8250 3800 8450
+Wire Wire Line
+	3800 8450 3850 8450
+Connection ~ 3800 8250
+Wire Wire Line
+	3800 8250 4500 8250
+Text Label 1400 9350 0    50   ~ 0
+RESET
+Wire Wire Line
+	1400 9350 1700 9350
+Text Label 1400 4500 0    50   ~ 0
+RESET
+Wire Wire Line
+	1400 4500 1700 4500
+Text Label 6050 4500 0    50   ~ 0
+RESET
+Wire Wire Line
+	6050 4500 6350 4500
+$Comp
+L Device:R R?
+U 1 1 62277670
+P 6500 9350
+AR Path="/62277670" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/62277670" Ref="R?"  Part="1" 
+F 0 "R?" V 6615 9350 50  0000 C CNN
+F 1 "10K" V 6706 9350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 6430 9350 50  0001 C CNN
+F 3 "~" H 6500 9350 50  0001 C CNN
+F 4 "5%" V 6797 9350 50  0000 C CNN "Value2"
+F 5 "R" H 6500 9350 50  0001 C CNN "Spice_Primitive"
+F 6 "10k" H 6500 9350 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 6500 9350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6500 9350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 9350 6700 9350
+Text Label 6050 9350 0    50   ~ 0
+RESET
+Wire Wire Line
+	6350 9350 6050 9350
+Text Label 11250 4500 0    50   ~ 0
+RESET
+Wire Wire Line
+	11250 4500 11550 4500
+$Comp
+L Transistor_BJT:BC858 Q?
+U 1 1 622AD795
+P 10300 7200
+F 0 "Q?" H 10491 7154 50  0000 L CNN
+F 1 "BC858" H 10491 7245 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10500 7125 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 10300 7200 50  0001 L CNN
+	1    10300 7200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 622AF0DE
+P 9900 7200
+AR Path="/622AF0DE" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/622AF0DE" Ref="R?"  Part="1" 
+F 0 "R?" V 9603 7200 50  0000 C CNN
+F 1 "1K" V 9694 7200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9830 7200 50  0001 C CNN
+F 3 "~" H 9900 7200 50  0001 C CNN
+F 4 "5%" V 9785 7200 50  0000 C CNN "Value2"
+F 5 "R" H 9900 7200 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 9900 7200 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 9900 7200 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    9900 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10050 7200 10100 7200
+$Comp
+L power:+5V #PWR?
+U 1 1 622FFE34
+P 10400 6950
+AR Path="/622FFE34" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/622FFE34" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10400 6800 50  0001 C CNN
+F 1 "+5V" H 10415 7123 50  0000 C CNN
+F 2 "" H 10400 6950 50  0001 C CNN
+F 3 "" H 10400 6950 50  0001 C CNN
+F 4 "V" H 10400 6950 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 10400 6950 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 10400 6950 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    10400 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 6950 10400 7000
+$Comp
+L Device:R R?
+U 1 1 62313DE2
+P 10400 7650
+AR Path="/62313DE2" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/62313DE2" Ref="R?"  Part="1" 
+F 0 "R?" H 10330 7559 50  0000 R CNN
+F 1 "1K" H 10330 7650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 10330 7650 50  0001 C CNN
+F 3 "~" H 10400 7650 50  0001 C CNN
+F 4 "5%" H 10330 7741 50  0000 R CNN "Value2"
+F 5 "R" H 10400 7650 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 10400 7650 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 10400 7650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    10400 7650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62317C8D
+P 10400 7850
+F 0 "#PWR?" H 10400 7600 50  0001 C CNN
+F 1 "GND" H 10405 7677 50  0000 C CNN
+F 2 "" H 10400 7850 50  0001 C CNN
+F 3 "" H 10400 7850 50  0001 C CNN
+	1    10400 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 7850 10400 7800
+Wire Wire Line
+	10400 7500 10400 7450
+Wire Wire Line
+	10400 7450 10850 7450
+Connection ~ 10400 7450
+Wire Wire Line
+	10400 7450 10400 7400
+Text Label 10850 7450 2    50   ~ 0
+RESET
+Text Notes 11100 7450 0    50   ~ 0
+Use a PNP transistor to "strengthen" the output signal\n"high" level, so a base resistor can be used on each\ngate that use this signal. Thus, a saturated transistor\nfrom one of this gates does not interfere with the others.
+$EndSCHEMATC

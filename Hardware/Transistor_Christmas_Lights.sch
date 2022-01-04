@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Main page"
 Date "2021-12-29"
 Rev ""
@@ -114,7 +114,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 3200 2200 3300
 Text Notes 2800 3750 0    50   ~ 0
-.tran 100u 3 0
+.tran 1m 4 0
 Wire Wire Line
 	3650 2950 3650 3050
 Wire Wire Line
@@ -192,4 +192,10 @@ F 3 "" H 2200 2600 50  0001 C CNN
 	1    2200 2600
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 3000 5500 1000 1000
+U 61D90E9A
+F0 "Ring_Counter" 50
+F1 "Ring_Counter.sch" 50
+$EndSheet
 $EndSCHEMATC
