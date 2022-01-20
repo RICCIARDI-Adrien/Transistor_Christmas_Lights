@@ -79,7 +79,7 @@ F 2 "" H 2200 3000 50  0001 C CNN
 F 3 "~" H 2200 3000 50  0001 C CNN
 F 4 "Y" H 2200 3000 50  0001 L CNN "Spice_Netlist_Enabled"
 F 5 "V" H 2200 3000 50  0001 L CNN "Spice_Primitive"
-F 6 "dc 5 pulse(0 5 0 0 0 0.5 1)" H 2330 2909 50  0000 L CNN "Spice_Model"
+F 6 "dc 5 pulse(0 5 0 0 0 50m 100m)" H 2330 2909 50  0000 L CNN "Spice_Model"
 	1    2200 3000
 	1    0    0    -1  
 $EndComp
@@ -114,7 +114,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 3200 2200 3300
 Text Notes 2800 3750 0    50   ~ 0
-.tran 1m 4 0
+.tran 20m 2 0
 Wire Wire Line
 	3650 2950 3650 3050
 Wire Wire Line
@@ -171,7 +171,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 2450 3650 2550
 Wire Wire Line
-	2200 2750 2900 2750
+	2200 2750 2750 2750
 $Sheet
 S 8500 3500 1500 1500
 U 61CE6682
@@ -207,4 +207,11 @@ Wire Wire Line
 	7500 4150 8500 4150
 Wire Wire Line
 	8500 4300 7500 4300
+Wire Wire Line
+	2750 2750 2750 4000
+Wire Wire Line
+	2750 4000 6000 4000
+Connection ~ 2750 2750
+Wire Wire Line
+	2750 2750 2900 2750
 $EndSCHEMATC

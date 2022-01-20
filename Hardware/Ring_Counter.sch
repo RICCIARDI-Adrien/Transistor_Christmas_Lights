@@ -918,6 +918,11 @@ F 0 "Q19" H 3891 3004 50  0000 L CNN
 F 1 "BC858" H 3891 3095 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 2975 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 3700 3050 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 3700 3050 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 3700 3050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3700 3050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 3700 3050 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 3700 3050 50  0001 C CNN "Spice_Node_Sequence"
 	1    3700 3050
 	1    0    0    1   
 $EndComp
@@ -950,6 +955,11 @@ F 0 "Q17" H 3891 2504 50  0000 L CNN
 F 1 "BC858" H 3891 2595 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3900 2475 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 3700 2550 50  0001 L CNN
+F 4 "Q" H 3700 2550 50  0001 C CNN "Spice_Primitive"
+F 5 "BC858" H 3700 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3700 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Spice_Simulation/BC858.lib" H 3700 2550 50  0001 C CNN "Spice_Lib_File"
+F 8 "3 1 2" H 3700 2550 50  0001 C CNN "Spice_Node_Sequence"
 	1    3700 2550
 	1    0    0    1   
 $EndComp
@@ -1166,6 +1176,11 @@ F 0 "Q36" H 8291 4554 50  0000 L CNN
 F 1 "BC858" H 8291 4645 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8300 4525 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 8100 4600 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 8100 4600 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 8100 4600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8100 4600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 8100 4600 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 8100 4600 50  0001 C CNN "Spice_Node_Sequence"
 	1    8100 4600
 	1    0    0    1   
 $EndComp
@@ -1252,6 +1267,11 @@ F 0 "Q34" H 8291 2504 50  0000 L CNN
 F 1 "BC858" H 8291 2595 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8300 2475 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 8100 2550 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 8100 2550 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 8100 2550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8100 2550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 8100 2550 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 8100 2550 50  0001 C CNN "Spice_Node_Sequence"
 	1    8100 2550
 	1    0    0    1   
 $EndComp
@@ -1282,6 +1302,11 @@ F 0 "Q35" H 8291 3004 50  0000 L CNN
 F 1 "BC858" H 8291 3095 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8300 2975 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 8100 3050 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 8100 3050 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 8100 3050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8100 3050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 8100 3050 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 8100 3050 50  0001 C CNN "Spice_Node_Sequence"
 	1    8100 3050
 	1    0    0    1   
 $EndComp
@@ -1966,6 +1991,11 @@ F 0 "Q22" H 4291 8304 50  0000 L CNN
 F 1 "BC858" H 4291 8395 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4300 8275 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 4100 8350 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 4100 8350 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 4100 8350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4100 8350 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 4100 8350 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 4100 8350 50  0001 C CNN "Spice_Node_Sequence"
 	1    4100 8350
 	1    0    0    1   
 $EndComp
@@ -1998,6 +2028,11 @@ F 0 "Q21" H 4291 7804 50  0000 L CNN
 F 1 "BC858" H 4291 7895 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4300 7775 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 4100 7850 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 4100 7850 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 4100 7850 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4100 7850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 4100 7850 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 4100 7850 50  0001 C CNN "Spice_Node_Sequence"
 	1    4100 7850
 	1    0    0    1   
 $EndComp
@@ -2214,6 +2249,11 @@ F 0 "Q39" H 8691 9854 50  0000 L CNN
 F 1 "BC858" H 8691 9945 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 9825 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 8500 9900 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 8500 9900 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 8500 9900 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8500 9900 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 8500 9900 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 8500 9900 50  0001 C CNN "Spice_Node_Sequence"
 	1    8500 9900
 	1    0    0    1   
 $EndComp
@@ -2300,6 +2340,11 @@ F 0 "Q37" H 8691 7804 50  0000 L CNN
 F 1 "BC858" H 8691 7895 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 7775 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 8500 7850 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 8500 7850 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 8500 7850 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8500 7850 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 8500 7850 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 8500 7850 50  0001 C CNN "Spice_Node_Sequence"
 	1    8500 7850
 	1    0    0    1   
 $EndComp
@@ -2330,6 +2375,11 @@ F 0 "Q38" H 8691 8304 50  0000 L CNN
 F 1 "BC858" H 8691 8395 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 8275 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 8500 8350 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 8500 8350 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 8500 8350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8500 8350 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 8500 8350 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 8500 8350 50  0001 C CNN "Spice_Node_Sequence"
 	1    8500 8350
 	1    0    0    1   
 $EndComp
@@ -2512,6 +2562,11 @@ F 0 "Q43" H 13941 2754 50  0000 L CNN
 F 1 "BC858" H 13941 2845 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 13950 2725 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 13750 2800 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 13750 2800 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 13750 2800 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 13750 2800 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 13750 2800 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 13750 2800 50  0001 C CNN "Spice_Node_Sequence"
 	1    13750 2800
 	1    0    0    1   
 $EndComp
@@ -2542,6 +2597,11 @@ F 0 "Q42" H 13941 2254 50  0000 L CNN
 F 1 "BC858" H 13941 2345 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 13950 2225 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 13750 2300 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 13750 2300 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 13750 2300 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 13750 2300 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 13750 2300 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 13750 2300 50  0001 C CNN "Spice_Node_Sequence"
 	1    13750 2300
 	1    0    0    1   
 $EndComp
