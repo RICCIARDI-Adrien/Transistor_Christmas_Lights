@@ -334,13 +334,7 @@ Connection ~ 4150 2100
 Wire Wire Line
 	4150 2100 4500 2100
 Wire Wire Line
-	2100 3350 2100 3250
-Wire Wire Line
 	2100 3250 2200 3250
-Wire Wire Line
-	2100 5000 2100 4950
-Wire Wire Line
-	2100 4850 2200 4850
 Wire Notes Line
 	2600 5550 3300 5550
 Wire Notes Line
@@ -421,8 +415,6 @@ Wire Wire Line
 	4500 2500 4500 2550
 Wire Wire Line
 	5900 2500 5850 2500
-Wire Wire Line
-	5850 2500 5850 5650
 $Comp
 L Device:R R?
 U 1 1 61D122A3
@@ -613,50 +605,42 @@ F 3 "" H 8600 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8600 2950 8600 3050
-Text Notes 1800 3450 0    50   Italic 10
-TEST
-Text Notes 1800 5000 0    50   Italic 10
-TEST
 Text Notes 8300 2850 0    50   Italic 10
 TEST
 Wire Wire Line
-	2100 4950 2400 4950
-Wire Wire Line
-	2400 4950 2400 5650
-Connection ~ 2100 4950
-Wire Wire Line
-	2100 4950 2100 4850
-Wire Wire Line
 	2500 4850 2600 4850
 Wire Wire Line
-	2400 5650 5850 5650
+	5850 2500 5850 2700
+Wire Wire Line
+	2150 5700 5850 5700
 $Comp
-L power:GND #PWR?
-U 1 1 61D82050
-P 2100 5000
-AR Path="/61D82050" Ref="#PWR?"  Part="1" 
-AR Path="/61CE6682/61D82050" Ref="#PWR08"  Part="1" 
-F 0 "#PWR08" H 2100 4750 50  0001 C CNN
-F 1 "GND" H 2105 4827 50  0000 C CNN
-F 2 "" H 2100 5000 50  0001 C CNN
-F 3 "" H 2100 5000 50  0001 C CNN
-	1    2100 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 61FED532
-P 2100 3350
-AR Path="/61FED532" Ref="#PWR?"  Part="1" 
-AR Path="/61CE6682/61FED532" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2100 3200 50  0001 C CNN
-F 1 "+5V" H 2115 3523 50  0000 C CNN
-F 2 "" H 2100 3350 50  0001 C CNN
-F 3 "" H 2100 3350 50  0001 C CNN
-F 4 "V" H 2100 3350 50  0001 C CNN "Spice_Primitive"
-F 5 "dc 5" H 2100 3350 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 2100 3350 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    2100 3350
+L Device:R R?
+U 1 1 62BA8E39
+P 5850 2850
+AR Path="/62BA8E39" Ref="R?"  Part="1" 
+AR Path="/61CE6682/62BA8E39" Ref="R?"  Part="1" 
+F 0 "R?" H 5919 2759 50  0000 L CNN
+F 1 "1K" H 5919 2850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5780 2850 50  0001 C CNN
+F 3 "~" H 5850 2850 50  0001 C CNN
+F 4 "5%" H 5919 2941 50  0000 L CNN "Value2"
+F 5 "R" H 5850 2850 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 5850 2850 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 5850 2850 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    5850 2850
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	5850 3000 5850 5700
+Text HLabel 2100 3250 0    50   Input ~ 0
+COUNTER_BIT_0
+Text HLabel 2100 4850 0    50   Input ~ 0
+COUNTER_BIT_1
+Connection ~ 2150 4850
+Wire Wire Line
+	2150 4850 2200 4850
+Wire Wire Line
+	2100 4850 2150 4850
+Wire Wire Line
+	2150 4850 2150 5700
 $EndSCHEMATC
