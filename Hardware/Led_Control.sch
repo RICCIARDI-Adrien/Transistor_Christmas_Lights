@@ -297,7 +297,7 @@ F 5 "BCX51" H 7550 2250 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 7550 2250 50  0001 C CNN "Spice_Netlist_Enabled"
 F 7 "Spice_Simulation/BCX51.lib" H 7550 2250 50  0001 C CNN "Spice_Lib_File"
 F 8 "3 1 2" H 7550 2250 50  0001 C CNN "Spice_Node_Sequence"
-F 9 "BCX51,115" H 7550 2250 50  0001 C CNN "ManufacturerPartNumber"
+F 9 "BCX51,115" H 7550 2250 50  0001 C CNN "PartNumber"
 	1    7550 2250
 	1    0    0    1   
 $EndComp
@@ -752,7 +752,7 @@ F 5 "BCX51" H 8800 4550 50  0001 C CNN "Spice_Model"
 F 6 "Y" H 8800 4550 50  0001 C CNN "Spice_Netlist_Enabled"
 F 7 "Spice_Simulation/BCX51.lib" H 8800 4550 50  0001 C CNN "Spice_Lib_File"
 F 8 "3 1 2" H 8800 4550 50  0001 C CNN "Spice_Node_Sequence"
-F 9 "BCX51,115" H 8800 4550 50  0001 C CNN "ManufacturerPartNumber"
+F 9 "BCX51,115" H 8800 4550 50  0001 C CNN "PartNumber"
 	1    8800 4550
 	1    0    0    1   
 $EndComp

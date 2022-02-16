@@ -2466,7 +2466,7 @@ Wire Notes Line
 Wire Notes Line
 	600  5600 600  750 
 Text Notes 650  5550 0    50   ~ 0
-First full R/S latch
+First full RS latch.
 Wire Notes Line
 	9600 6050 9600 10900
 Wire Notes Line
@@ -2476,7 +2476,7 @@ Wire Notes Line
 Wire Notes Line
 	600  6050 600  10900
 Text Notes 650  10850 0    50   ~ 0
-Second full R/S latch
+Second full RS latch.
 Text Label 9350 8600 2    50   ~ 0
 LATCH_2_OUT
 $Comp
@@ -2658,5 +2658,146 @@ Wire Notes Line
 Wire Notes Line
 	10300 4550 14850 4550
 Text Notes 10350 4500 0    50   ~ 0
-Third half R/S latch.
+Third half RS latch.
+$Comp
+L Device:R R?
+U 1 1 6211682E
+P 12300 7400
+AR Path="/6211682E" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/6211682E" Ref="R70"  Part="1" 
+F 0 "R70" V 12003 7400 50  0000 C CNN
+F 1 "220K" V 12094 7400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 12230 7400 50  0001 C CNN
+F 3 "~" H 12300 7400 50  0001 C CNN
+F 4 "5%" V 12185 7400 50  0000 C CNN "Value2"
+F 5 "R" H 12300 7400 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 12300 7400 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 12300 7400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    12300 7400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 62117E9F
+P 12700 7650
+F 0 "C1" H 12815 7787 50  0000 L CNN
+F 1 "4.7u" H 12815 7696 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 12738 7500 50  0001 C CNN
+F 3 "~" H 12700 7650 50  0001 C CNN
+F 4 "16V" H 12815 7605 50  0000 L CNN "Value2"
+F 5 "X5R" H 12815 7514 50  0000 L CNN "Value3"
+F 6 "CL21A475KOFNNNE" H 12700 7650 50  0001 C CNN "PartNumber"
+F 7 "Samsung" H 12700 7650 50  0001 C CNN "Manufacturer"
+	1    12700 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6211A796
+P 13100 7400
+AR Path="/6211A796" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/6211A796" Ref="R71"  Part="1" 
+F 0 "R71" V 12803 7400 50  0000 C CNN
+F 1 "1K" V 12894 7400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 13030 7400 50  0001 C CNN
+F 3 "~" H 13100 7400 50  0001 C CNN
+F 4 "5%" V 12985 7400 50  0000 C CNN "Value2"
+F 5 "R" H 13100 7400 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 13100 7400 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 13100 7400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    13100 7400
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC858 Q46
+U 1 1 6211DBE2
+P 13500 7400
+F 0 "Q46" H 13691 7354 50  0000 L CNN
+F 1 "BC858" H 13691 7445 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 13700 7325 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 13500 7400 50  0001 L CNN
+F 4 "Spice_Simulation/BC858.lib" H 13500 7400 50  0001 C CNN "Spice_Lib_File"
+F 5 "BC858" H 13500 7400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 13500 7400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "Q" H 13500 7400 50  0001 C CNN "Spice_Primitive"
+F 8 "3 1 2" H 13500 7400 50  0001 C CNN "Spice_Node_Sequence"
+	1    13500 7400
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6212D299
+P 13600 7100
+AR Path="/6212D299" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/6212D299" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 13600 6950 50  0001 C CNN
+F 1 "+5V" H 13615 7273 50  0000 C CNN
+F 2 "" H 13600 7100 50  0001 C CNN
+F 3 "" H 13600 7100 50  0001 C CNN
+F 4 "V" H 13600 7100 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 13600 7100 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 13600 7100 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    13600 7100
+	1    0    0    -1  
+$EndComp
+Text Label 13950 7800 2    50   ~ 0
+RESET
+Wire Wire Line
+	13600 7600 13600 7800
+Wire Wire Line
+	13600 7800 13950 7800
+Wire Wire Line
+	13250 7400 13300 7400
+Wire Wire Line
+	12450 7400 12700 7400
+Wire Wire Line
+	12700 7500 12700 7400
+Connection ~ 12700 7400
+Wire Wire Line
+	12700 7400 12950 7400
+Wire Wire Line
+	13600 7100 13600 7200
+$Comp
+L power:+5V #PWR?
+U 1 1 62180E8E
+P 11950 7350
+AR Path="/62180E8E" Ref="#PWR?"  Part="1" 
+AR Path="/61D90E9A/62180E8E" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 11950 7200 50  0001 C CNN
+F 1 "+5V" H 11965 7523 50  0000 C CNN
+F 2 "" H 11950 7350 50  0001 C CNN
+F 3 "" H 11950 7350 50  0001 C CNN
+F 4 "V" H 11950 7350 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 11950 7350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 11950 7350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    11950 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 7400 12150 7400
+$Comp
+L power:GND #PWR060
+U 1 1 621A1546
+P 12700 7850
+F 0 "#PWR060" H 12700 7600 50  0001 C CNN
+F 1 "GND" H 12705 7677 50  0000 C CNN
+F 2 "" H 12700 7850 50  0001 C CNN
+F 3 "" H 12700 7850 50  0001 C CNN
+	1    12700 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 7800 12700 7850
+Wire Notes Line
+	11500 6700 14200 6700
+Wire Notes Line
+	14200 6700 14200 8600
+Wire Notes Line
+	14200 8600 11500 8600
+Wire Notes Line
+	11500 8600 11500 6700
+Text Notes 11600 8550 0    50   ~ 0
+Power-on reset\nGenerate a 100ms high level pulse to reset latches.
+Wire Wire Line
+	11950 7400 11950 7350
 $EndSCHEMATC
