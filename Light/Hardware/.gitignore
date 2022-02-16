@@ -1,0 +1,7 @@
+Assembly_Files/
+PCB_Production_Files/
+*.bak
+*-bak
+*.csv
+*.xml
+fp-info-cache
