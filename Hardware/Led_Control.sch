@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title "Leds control logic and power"
 Date "2022-01-01"
 Rev ""
@@ -88,7 +88,7 @@ F 7 "Y" H 8600 2800 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    0    0    -1  
 $EndComp
 Text Notes 2900 7350 0    50   ~ 0
-PNP transistors base resistor value :\n\nLet's decide that maximum emitter current will be 500 mA\n(enough for 30 leds at 15 mA each).\nMinimum hFE is 63. So minimum base current is 0.5A / 63hFE = 8 mA.\nAs R = U / I, the maximum base resistor value is\n5V / 0.008A = 625 ohm.\nUse a 560 ohm resistor to get a little more margin.
+Power PNP transistors base resistor value :\n\nLet's decide that maximum emitter current will be 500 mA\n(enough for 30 leds at 15 mA each).\nMinimum hFE is 63. So minimum base current is 0.5A / 63hFE = 8 mA.\nAs R = U / I, the maximum base resistor value is\n5V / 0.008A = 625 ohm.\nUse a 560 ohm resistor to get a little more margin.
 Connection ~ 6200 2250
 Wire Wire Line
 	6200 2250 6950 2250

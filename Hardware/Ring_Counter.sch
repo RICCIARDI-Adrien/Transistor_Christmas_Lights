@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title "A ring counter made of RS latches."
 Date "2022-01-01"
 Rev ""
@@ -2441,14 +2441,10 @@ Text HLabel 900  4150 0    50   Input ~ 0
 CLK
 Wire Wire Line
 	900  4150 950  4150
-Text HLabel 3350 2100 0    50   Input ~ 0
-CLK
 Wire Wire Line
 	3350 2100 3450 2100
 Wire Wire Line
 	3450 2100 3450 2200
-Text HLabel 6600 1850 0    50   Input ~ 0
-CLK
 Text HLabel 3750 7400 0    50   Input ~ 0
 CLK
 Wire Wire Line
@@ -2635,8 +2631,6 @@ Wire Wire Line
 Connection ~ 13850 3050
 Wire Wire Line
 	13850 3050 13850 3100
-Text HLabel 13400 1850 0    50   Input ~ 0
-CLK
 Wire Wire Line
 	13400 1850 13500 1850
 Wire Wire Line
@@ -2800,4 +2794,10 @@ Text Notes 11600 8550 0    50   ~ 0
 Power-on reset\nGenerate a 100ms high level pulse to reset latches.
 Wire Wire Line
 	11950 7400 11950 7350
+Text HLabel 13400 1850 0    50   Input ~ 0
+CLK
+Text HLabel 6600 1850 0    50   Input ~ 0
+CLK
+Text HLabel 3350 2100 0    50   Input ~ 0
+CLK
 $EndSCHEMATC
