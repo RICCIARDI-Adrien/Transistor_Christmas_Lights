@@ -49,44 +49,6 @@ Wire Wire Line
 	5850 2500 5850 2700
 Wire Wire Line
 	2500 4850 2600 4850
-Text Notes 8300 2850 0    50   Italic 10
-TEST
-Wire Wire Line
-	8600 2950 8600 3050
-$Comp
-L power:GND #PWR?
-U 1 1 61D66889
-P 8600 3050
-AR Path="/61D66889" Ref="#PWR?"  Part="1" 
-AR Path="/61CE6682/61D66889" Ref="#PWR019"  Part="1" 
-F 0 "#PWR019" H 8600 2800 50  0001 C CNN
-F 1 "GND" H 8605 2877 50  0000 C CNN
-F 2 "" H 8600 3050 50  0001 C CNN
-F 3 "" H 8600 3050 50  0001 C CNN
-	1    8600 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 2450 8600 2650
-Wire Wire Line
-	7650 2450 8600 2450
-$Comp
-L Device:R R?
-U 1 1 61D65742
-P 8600 2800
-AR Path="/61D65742" Ref="R?"  Part="1" 
-AR Path="/61CE6682/61D65742" Ref="R11"  Part="1" 
-F 0 "R11" H 8670 2891 50  0000 L CNN
-F 1 "1K" H 8670 2800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8530 2800 50  0001 C CNN
-F 3 "~" H 8600 2800 50  0001 C CNN
-F 4 "5%" H 8670 2709 50  0000 L CNN "Value2"
-F 5 "R" H 8600 2800 50  0001 C CNN "Spice_Primitive"
-F 6 "1k" H 8600 2800 50  0001 C CNN "Spice_Model"
-F 7 "Y" H 8600 2800 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    8600 2800
-	1    0    0    -1  
-$EndComp
 Text Notes 2900 7350 0    50   ~ 0
 Power PNP transistors base resistor value :\n\nLet's decide that maximum emitter current will be 500 mA\n(enough for 30 leds at 15 mA each).\nMinimum hFE is 63. So minimum base current is 0.5A / 63hFE = 8 mA.\nAs R = U / I, the maximum base resistor value is\n5V / 0.008A = 625 ohm.\nUse a 560 ohm resistor to get a little more margin.
 Connection ~ 6200 2250
@@ -699,44 +661,6 @@ F 3 "" H 8100 5050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8100 5050 8100 5000
-Text Notes 9600 5150 0    50   Italic 10
-TEST
-Wire Wire Line
-	9900 5250 9900 5350
-$Comp
-L power:GND #PWR?
-U 1 1 62C4EC2C
-P 9900 5350
-AR Path="/62C4EC2C" Ref="#PWR?"  Part="1" 
-AR Path="/61CE6682/62C4EC2C" Ref="#PWR058"  Part="1" 
-F 0 "#PWR058" H 9900 5100 50  0001 C CNN
-F 1 "GND" H 9905 5177 50  0000 C CNN
-F 2 "" H 9900 5350 50  0001 C CNN
-F 3 "" H 9900 5350 50  0001 C CNN
-	1    9900 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 4750 9900 4950
-Wire Wire Line
-	8900 4750 9900 4750
-$Comp
-L Device:R R?
-U 1 1 62C4EC38
-P 9900 5100
-AR Path="/62C4EC38" Ref="R?"  Part="1" 
-AR Path="/61CE6682/62C4EC38" Ref="R69"  Part="1" 
-F 0 "R69" H 9970 5191 50  0000 L CNN
-F 1 "1K" H 9970 5100 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 9830 5100 50  0001 C CNN
-F 3 "~" H 9900 5100 50  0001 C CNN
-F 4 "5%" H 9970 5009 50  0000 L CNN "Value2"
-F 5 "R" H 9900 5100 50  0001 C CNN "Spice_Primitive"
-F 6 "1k" H 9900 5100 50  0001 C CNN "Spice_Model"
-F 7 "Y" H 9900 5100 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    9900 5100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8600 4550 8550 4550
 $Comp
@@ -824,4 +748,16 @@ Wire Wire Line
 Connection ~ 8100 4550
 Wire Wire Line
 	8100 4600 8100 4550
+Text HLabel 7750 2550 2    50   Output ~ 0
+LED_0
+Wire Wire Line
+	7650 2450 7650 2550
+Wire Wire Line
+	7650 2550 7750 2550
+Text HLabel 9000 4850 2    50   Output ~ 0
+LED_1
+Wire Wire Line
+	8900 4750 8900 4850
+Wire Wire Line
+	8900 4850 9000 4850
 $EndSCHEMATC
