@@ -182,4 +182,84 @@ Wire Wire Line
 	8150 4650 8500 4650
 Text Notes 9750 4600 0    50   ~ 0
 Christmas lights
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6228BA0E
+P 5150 1700
+F 0 "H1" H 5250 1794 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5250 1703 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 5150 1700 50  0001 C CNN
+F 3 "~" H 5150 1700 50  0001 C CNN
+F 4 "DNP" H 5250 1612 50  0000 L CNN "Populate"
+	1    5150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6228D4C8
+P 6150 1700
+F 0 "H2" H 6250 1794 50  0000 L CNN
+F 1 "MountingHole_Pad" H 6250 1703 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 6150 1700 50  0001 C CNN
+F 3 "~" H 6150 1700 50  0001 C CNN
+F 4 "DNP" H 6250 1612 50  0000 L CNN "Populate"
+	1    6150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6228D877
+P 7150 1700
+F 0 "H3" H 7250 1794 50  0000 L CNN
+F 1 "MountingHole_Pad" H 7250 1703 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 7150 1700 50  0001 C CNN
+F 3 "~" H 7150 1700 50  0001 C CNN
+F 4 "DNP" H 7250 1612 50  0000 L CNN "Populate"
+	1    7150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 6228DDEA
+P 8150 1700
+F 0 "H4" H 8250 1794 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8250 1703 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.5mm_Pad" H 8150 1700 50  0001 C CNN
+F 3 "~" H 8150 1700 50  0001 C CNN
+F 4 "DNP" H 8250 1612 50  0000 L CNN "Populate"
+	1    8150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR063
+U 1 1 62294043
+P 6650 2000
+F 0 "#PWR063" H 6650 1750 50  0001 C CNN
+F 1 "GND" H 6655 1827 50  0000 C CNN
+F 2 "" H 6650 2000 50  0001 C CNN
+F 3 "" H 6650 2000 50  0001 C CNN
+	1    6650 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1800 5150 1900
+Wire Wire Line
+	5150 1900 6150 1900
+Wire Wire Line
+	6150 1900 6150 1800
+Connection ~ 6150 1900
+Wire Wire Line
+	6150 1900 6650 1900
+Wire Wire Line
+	7150 1900 7150 1800
+Wire Wire Line
+	7150 1900 8150 1900
+Wire Wire Line
+	8150 1900 8150 1800
+Connection ~ 7150 1900
+Wire Wire Line
+	6650 2000 6650 1900
+Connection ~ 6650 1900
+Wire Wire Line
+	6650 1900 7150 1900
 $EndSCHEMATC
