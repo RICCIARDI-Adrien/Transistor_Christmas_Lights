@@ -1,6 +1,12 @@
 # Transistor Christmas Lights
 
-A really simple blinking Christmas lights using only NPN bipolar transistors for its logic.
+A really simple blinking Christmas lights using only bipolar transistors for its logic.
+
+## Circuits
+
+The board is made of 2 separate circuits : the motherboard and the light.  
+The motherboard circuit holds the logic while the light circuit contains the leds.  
+The light circuit should be manufactured in about 20 copies.
 
 ## Circuit simulation
 
