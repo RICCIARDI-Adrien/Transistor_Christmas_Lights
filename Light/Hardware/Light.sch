@@ -40,10 +40,11 @@ $Comp
 L Connector_Generic:Conn_01x03 J2
 U 1 1 620D6340
 P 4350 4100
-F 0 "J2" V 4222 4280 50  0000 L CNN
-F 1 "Conn_01x03" V 4313 4280 50  0000 L CNN
+F 0 "J2" V 4475 4096 50  0000 C CNN
+F 1 "Conn_01x03" V 4566 4096 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 4350 4100 50  0001 C CNN
 F 3 "~" H 4350 4100 50  0001 C CNN
+F 4 "DNP" V 4657 4096 50  0000 C CNN "Populate"
 	1    4350 4100
 	0    1    1    0   
 $EndComp
@@ -62,10 +63,11 @@ $Comp
 L Connector_Generic:Conn_01x03 J1
 U 1 1 620DA4B2
 P 4350 3000
-F 0 "J1" V 4314 2812 50  0000 R CNN
-F 1 "Conn_01x03" V 4223 2812 50  0000 R CNN
+F 0 "J1" V 4657 2996 50  0000 C CNN
+F 1 "Conn_01x03" V 4566 2996 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 4350 3000 50  0001 C CNN
 F 3 "~" H 4350 3000 50  0001 C CNN
+F 4 "DNP" V 4475 2996 50  0000 C CNN "Populate"
 	1    4350 3000
 	0    -1   -1   0   
 $EndComp
@@ -73,11 +75,11 @@ $Comp
 L Device:R R2
 U 1 1 620DED1F
 P 4900 3550
-F 0 "R2" V 5107 3550 50  0000 C CNN
-F 1 "270" V 5016 3550 50  0000 C CNN
+F 0 "R2" V 5197 3550 50  0000 C CNN
+F 1 "270" V 5106 3550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4830 3550 50  0001 C CNN
 F 3 "~" H 4900 3550 50  0001 C CNN
-F 4 "5%" H 4900 3550 50  0001 C CNN "Value2"
+F 4 "5%" V 5015 3550 50  0000 C CNN "Value2"
 	1    4900 3550
 	0    -1   -1   0   
 $EndComp
