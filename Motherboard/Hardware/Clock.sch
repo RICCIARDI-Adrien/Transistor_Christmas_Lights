@@ -199,8 +199,6 @@ Wire Wire Line
 	5700 4750 6700 4750
 Wire Wire Line
 	7700 3800 7700 4000
-Wire Wire Line
-	7550 4000 7700 4000
 Connection ~ 7700 4000
 Wire Wire Line
 	7700 4000 7700 4200
@@ -291,34 +289,21 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 62329898
-P 8350 4000
+P 8550 3750
 AR Path="/62329898" Ref="R?"  Part="1" 
 AR Path="/61D90E9A/62329898" Ref="R?"  Part="1" 
 AR Path="/622B55AD/62329898" Ref="R72"  Part="1" 
-F 0 "R72" V 8647 4000 50  0000 C CNN
-F 1 "1K" V 8556 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8280 4000 50  0001 C CNN
-F 3 "~" H 8350 4000 50  0001 C CNN
-F 4 "5%" V 8465 4000 50  0000 C CNN "Value2"
-F 5 "R" H 8350 4000 50  0001 C CNN "Spice_Primitive"
-F 6 "1k" H 8350 4000 50  0001 C CNN "Spice_Model"
-F 7 "Y" H 8350 4000 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    8350 4000
+F 0 "R72" V 8847 3750 50  0000 C CNN
+F 1 "10K" V 8756 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8480 3750 50  0001 C CNN
+F 3 "~" H 8550 3750 50  0001 C CNN
+F 4 "5%" V 8665 3750 50  0000 C CNN "Value2"
+F 5 "R" H 8550 3750 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 8550 3750 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 8550 3750 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8550 3750
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9000 3750 8950 3750
-Wire Wire Line
-	8950 3750 8950 4000
-Wire Wire Line
-	8950 4000 8500 4000
-Wire Wire Line
-	8950 4000 8950 4250
-Wire Wire Line
-	8950 4250 9000 4250
-Connection ~ 8950 4000
-Wire Wire Line
-	7700 4000 8200 4000
 Text HLabel 9900 4000 2    50   Output ~ 0
 CLK
 $Comp
@@ -576,4 +561,39 @@ Wire Notes Line
 	10350 5450 10350 3200
 Wire Notes Line
 	10350 3200 5100 3200
+$Comp
+L Device:R R?
+U 1 1 623800AC
+P 8550 4250
+AR Path="/623800AC" Ref="R?"  Part="1" 
+AR Path="/61D90E9A/623800AC" Ref="R?"  Part="1" 
+AR Path="/622B55AD/623800AC" Ref="R75"  Part="1" 
+F 0 "R75" V 8847 4250 50  0000 C CNN
+F 1 "10K" V 8756 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 8480 4250 50  0001 C CNN
+F 3 "~" H 8550 4250 50  0001 C CNN
+F 4 "5%" V 8665 4250 50  0000 C CNN "Value2"
+F 5 "R" H 8550 4250 50  0001 C CNN "Spice_Primitive"
+F 6 "1k" H 8550 4250 50  0001 C CNN "Spice_Model"
+F 7 "Y" H 8550 4250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8550 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8350 4000 8350 3750
+Wire Wire Line
+	8350 3750 8400 3750
+Wire Wire Line
+	7700 4000 8350 4000
+Wire Wire Line
+	7550 4000 7700 4000
+Wire Wire Line
+	8350 4000 8350 4250
+Wire Wire Line
+	8350 4250 8400 4250
+Connection ~ 8350 4000
+Wire Wire Line
+	8700 3750 9000 3750
+Wire Wire Line
+	8700 4250 9000 4250
 $EndSCHEMATC
