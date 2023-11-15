@@ -570,6 +570,9 @@
     (property "Manufacturer" "Lumberg" (at 66.04 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Sim.Enable" "0" (at 66.04 52.07 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid a1c98e79-0130-476d-a366-b3187eae0e66))
     (pin "2" (uuid be334b95-6bc4-459b-ba52-9d9e2db0c80c))
     (pin "3" (uuid 4e19f14d-65c0-44d6-9321-43063f50321c))
@@ -749,6 +752,9 @@
     (property "PartNumber" "KLBR_4" (at 228.6 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Sim.Enable" "0" (at 228.6 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "G" (uuid ed897884-350f-4240-9dd5-ba4931994b6e))
     (pin "R" (uuid 05b9b484-b60c-48d3-b359-001a202921cb))
     (pin "S" (uuid 8a4720fc-756a-4d70-bca6-42e3301977fc))
@@ -805,6 +811,9 @@
     (property "Populate" "DNP" (at 133.35 45.4152 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
+    (property "Sim.Enable" "0" (at 130.81 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ebc57f65-27a4-4806-8018-47aee7e1ef8e))
     (instances
       (project "Motherboard"
@@ -832,6 +841,9 @@
     )
     (property "Populate" "DNP" (at 158.75 45.4152 0)
       (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Sim.Enable" "0" (at 156.21 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e6695aec-9227-451d-9e45-2c6bc8d67c67))
     (instances
@@ -861,6 +873,9 @@
     (property "Populate" "DNP" (at 184.15 45.4152 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
+    (property "Sim.Enable" "0" (at 181.61 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 5f49b8d4-b835-4e8d-8b92-4da4eb91d3a5))
     (instances
       (project "Motherboard"
@@ -888,6 +903,9 @@
     )
     (property "Populate" "DNP" (at 209.55 45.4152 0)
       (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Sim.Enable" "0" (at 207.01 43.18 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7c62447f-9f78-4b5f-a6cf-4f61b9030b75))
     (instances
